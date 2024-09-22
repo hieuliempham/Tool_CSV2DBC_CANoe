@@ -9,25 +9,6 @@ BEM,0x81E56F4,Timeout_CSD,24,2,Timeout of charger's charging statistics message
 BEM,0x81E56F4,Timeout_CST,18,2,Timeout of charger's charging suspension message
 BEM,0x81E56F4,Timeout_CTS_CML,8,2,Timeout of charger time synchronization message and charger maximum output capacity message
 BHM,0x182756F4,MaxChargingVoltage,0,16,Total maximum permissible charging voltage
-BRM,0x1C0256F4,BatteryPackNumber,96,32,"Battery pack No., which is reserved and will be defined by the manufacturer"
-BRM,0x1C0256F4,BatterySystemCapacity,32,16,Capacity of the power storage battery system of whole vehicle
-BRM,0x1C0256F4,BatterySystemVoltage,48,16,Total voltage of the power storage battery system of whole vehicle
-BRM,0x1C0256F4,BatteryType,24,8,Battery type
-BRM,0x1C0256F4,BmsRevision,0,8,"In this standard, as for the charger communication protocol version No., its current version is specified as V1.1 and is expressed as: byte 1 -- 01H"
-BRM,0x1C0256F4,BmsSoftwareVersion_CompileDay,336,8,"BMS software version number, determined according to hexadecimal coding. In which, Byte2 - 01H~1FH represents compilation day (e.g. the 10the day: fill in Byte 2 0AH)"
-BRM,0x1C0256F4,BmsSoftwareVersion_CompileMonth,344,8,"BMS software version number, determined according to hexadecimal coding. In which, Byte3 - 01H~0CH represents compilation month (e.g. November: fill in Byte 3 0BH)"
-BRM,0x1C0256F4,BmsSoftwareVersion_CompileYear,352,16,"BMS software version number, determined according to hexadecimal coding. In which, Byte5, Byte4 - 0001H~FFFEH represents compilation year (e.g. the year of 2015: fill in Byte5-DFH, byte4-07H)"
-BRM,0x1C0256F4,BmsSoftwareVersion_Reserved,368,24,"BMS software version number 8byte represents current BMS version information, determined according to hexadecimal coding. In which, Byte8, byte7, byte6-000001H~FFFFFEH, reserved, fill in FFFFFFH"
-BRM,0x1C0256F4,BmsSoftwareVersion_Serial,328,8,"BMS software version number, determined according to hexadecimal coding. In which, Byte1 - 01H~FEH represents edition serial number (e.g. 16: fill in Byte 1-10H)"
-BRM,0x1C0256F4,BmsVersion,8,16,"In this standard, as for the charger communication protocol version No., its current version is specified as V1.1 and is expressed as: byte3, byte2 -- 0001H"
-BRM,0x1C0256F4,BRM_Reserved1,184,8,Reserved
-BRM,0x1C0256F4,ChargingFrequency,152,24,"Battery set charging frequency, which is subject to BMS statistics."
-BRM,0x1C0256F4,ManufacturerName,64,32,Battery manufacturer name
-BRM,0x1C0256F4,ProductionDay,144,8,Battery set production day
-BRM,0x1C0256F4,ProductionMonth,136,8,Battery set production month
-BRM,0x1C0256F4,ProductionYear,128,8,Battery set production year
-BRM,0x1C0256F4,Property,176,8,Battery set property right mark
-BRM,0x1C0256F4,VIN,192,136,Vehicle identification number (VIN)
 BRO,0x100956F4,BmsReadyForCharging,0,8,Whether BMS is ready for charging
 BSD,0x181C56F4,SingleBatteryMaxTemperature,48,8,Maximum temperature of power storage battery (°C)
 BSD,0x181C56F4,SingleBatteryMaxVoltage,24,16,Maximum voltage of single power storage battery (V)
@@ -95,3 +76,9 @@ CST,0x101AF456,OtherFault,18,2,Other fault
 CST,0x101AF456,SuddenStop,16,2,Sudden stop of charger
 CST,0x101AF456,SuspendsArtificially,2,2,Charging suspends artificially
 CHM,0x1826F456,MajorChargerVersion,8,16,
+BCS,0x1C1156F4,CurrentChargeState,48,8,Current state-of-charge SOC (%)
+BCS,0x1C1156F4,EstimatedRemainingChargingTime,56,16,Estimated remaining charging time (min)
+BCS,0x1C1156F4,GroupNrOfCellWithHighestVoltage,44,4,Group number in which the highest voltage of single power storage battery is located
+BCS,0x1C1156F4,HighestVoltageOfBatteryCell,32,12,Voltage of maximum single power storage battery
+BCS,0x1C1156F4,MeasuredChargingCurrent,16,16,Measured value of charging current (A)
+BCS,0x1C1156F4,MeasuredChargingVoltage,0,16,Measured value of charging voltage (V)

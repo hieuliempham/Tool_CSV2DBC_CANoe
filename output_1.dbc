@@ -135,8 +135,8 @@ CM_ SG_ 2618382068 MeasuredChargingVoltage "Measured value of charging voltage (
 CM_ BO_ 2283689716 "[Error] BMS's error message";
 CM_ SG_ 2283689716 Timeout_CCS "Timeout  of  charger's  charging  state  message";
 CM_ SG_ 2283689716 Timeout_CRO "Timeout of charger's charging preparation completion message";
-CM_ SG_ 2283689716 Timeout_CRO_NotReady "Timeout of CRO with SPN2560=0Ã—00";
-CM_ SG_ 2283689716 Timeout_CRO_Ready "Timeout of CRO with SPN2560=0Ã—AA";
+CM_ SG_ 2283689716 Timeout_CRO_NotReady "Timeout of CRO with SPN2560=0x00";
+CM_ SG_ 2283689716 Timeout_CRO_Ready "Timeout of CRO with SPN2560=0xAA";
 CM_ SG_ 2283689716 Timeout_CSD "Timeout of charger's charging statistics message";
 CM_ SG_ 2283689716 Timeout_CST "Timeout of charger's charging suspension message";
 CM_ SG_ 2283689716 Timeout_CTS_CML "Timeout of charger time synchronization message and charger maximum output capacity message";
@@ -145,9 +145,9 @@ CM_ SG_ 2552714996 MaxChargingVoltage "Total maximum permissible charging voltag
 CM_ BO_ 2416531188 "[Parameter Configuration] Battery charging ready state";
 CM_ SG_ 2416531188 BmsReadyForCharging "Whether BMS is ready for charging";
 CM_ BO_ 2551994100 "[EndOfCharging] BMS statistical data";
-CM_ SG_ 2551994100 SingleBatteryMaxTemperature "Maximum temperature of power storage battery (Â°C)";
+CM_ SG_ 2551994100 SingleBatteryMaxTemperature "Maximum temperature of power storage battery (ÂøC)";
 CM_ SG_ 2551994100 SingleBatteryMaxVoltage "Maximum voltage of single power storage battery (V)";
-CM_ SG_ 2551994100 SingleBatteryMinTemperature "Minimum temperature of power storage battery (Â°C)";
+CM_ SG_ 2551994100 SingleBatteryMinTemperature "Minimum temperature of power storage battery (ÂøC)";
 CM_ SG_ 2551994100 SingleBatteryMinVoltage "Minimum voltage of single power storage battery (V)";
 CM_ SG_ 2551994100 SuspendStateOfChargeSOC "Suspend state-of-charge SOC (%)";
 CM_ BO_ 2551404276 "[Charging] Power storage battery status information";
