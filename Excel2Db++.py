@@ -80,6 +80,11 @@ with open(dbc_file, 'w') as f:
         f.write('\n')
         # Convert message ID to decimal
         message_id_dec = int(message_id, 16)
+
+        is_extended = True if message_id_dec > 0x7FF else False
+        if is_extended:
+            message_id_dec |= 0x80000000
+
         f.write(f"BO_ {message_id_dec} {message['name']}: {message['dlc']} {message['transmitter']}\n")
         
         for signal in message['signals']:

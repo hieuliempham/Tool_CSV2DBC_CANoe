@@ -7,13 +7,13 @@ BS_ :
 BU_: Charger BMS
 
 
-BO_ 403724020 BCL: 5 BMS
+BO_ 2551207668 BCL: 5 BMS
  SG_ CurrentDemand : 16|16@1- (1,0) [0|65535] "" Charger
  SG_ VoltageDemand : 0|16@1- (1,0) [0|65535] "" Charger
 
-BO_ 470898420 BCS: 9 BMS
+BO_ 2618382068 BCS: 9 BMS
 
-BO_ 136206068 BEM: 4 BMS
+BO_ 2283689716 BEM: 4 BMS
  SG_ Timeout_CCS : 16|2@1- (1,0) [0|3] "" Charger
  SG_ Timeout_CRO : 10|2@1- (1,0) [0|3] "" Charger
  SG_ Timeout_CRO_NotReady : 0|2@1- (1,0) [0|3] "" Charger
@@ -22,20 +22,20 @@ BO_ 136206068 BEM: 4 BMS
  SG_ Timeout_CST : 18|2@1- (1,0) [0|3] "" Charger
  SG_ Timeout_CTS_CML : 8|2@1- (1,0) [0|3] "" Charger
 
-BO_ 405231348 BHM: 2 BMS
+BO_ 2552714996 BHM: 2 BMS
  SG_ MaxChargingVoltage : 0|16@1- (1,0) [0|65535] "" Charger
 
-BO_ 269047540 BRO: 1 BMS
+BO_ 2416531188 BRO: 1 BMS
  SG_ BmsReadyForCharging : 0|8@1- (1,0) [0|255] "" Charger
 
-BO_ 404510452 BSD: 7 BMS
+BO_ 2551994100 BSD: 7 BMS
  SG_ SingleBatteryMaxTemperature : 48|8@1- (1,0) [0|255] "" Charger
  SG_ SingleBatteryMaxVoltage : 24|16@1- (1,0) [0|65535] "" Charger
  SG_ SingleBatteryMinTemperature : 40|8@1- (1,0) [0|255] "" Charger
  SG_ SingleBatteryMinVoltage : 8|16@1- (1,0) [0|65535] "" Charger
  SG_ SuspendStateOfChargeSOC : 0|8@1- (1,0) [0|255] "" Charger
 
-BO_ 403920628 BSM: 7 BMS
+BO_ 2551404276 BSM: 7 BMS
  SG_ BatteryCellVoltageState : 40|2@1- (1,0) [0|3] "" Charger
  SG_ BatteryChargingOvercurrent : 44|2@1- (1,0) [0|3] "" Charger
  SG_ BatteryExcessTemperature : 46|2@1- (1,0) [0|3] "" Charger
@@ -49,7 +49,7 @@ BO_ 403920628 BSM: 7 BMS
  SG_ SingleBatteryHighestVoltageSerNo : 0|8@1- (1,0) [0|255] "" Charger
  SG_ StateOfCharge : 42|2@1- (1,0) [0|3] "" Charger
 
-BO_ 270096116 BST: 4 BMS
+BO_ 2417579764 BST: 4 BMS
  SG_ AbnormalVoltageError : 26|2@1- (1,0) [0|3] "" Charger
  SG_ BatterySetOverTemp : 16|2@1- (1,0) [0|3] "" Charger
  SG_ BmsConnectorOverTemp : 12|2@1- (1,0) [0|3] "" Charger
@@ -65,13 +65,13 @@ BO_ 270096116 BST: 4 BMS
  SG_ SettingValueOfTotalVoltage : 2|2@1- (1,0) [0|3] "" Charger
  SG_ VoltageDetectionFault : 20|2@1- (1,0) [0|3] "" Charger
 
-BO_ 403895382 CCS: 8 Charger
+BO_ 2551379030 CCS: 8 Charger
  SG_ ChargingPermissible : 48|2@1- (1,0) [0|3] "" BMS
  SG_ CumulativeChargingTime : 32|16@1- (1,0) [0|65535] "" BMS
  SG_ CurrentOutputValue : 16|16@1- (1,0) [0|65535] "" BMS
  SG_ VoltageOutputValue : 0|16@1- (1,0) [0|65535] "" BMS
 
-BO_ 136311894 CEM: 4 Charger
+BO_ 2283795542 CEM: 4 Charger
  SG_ Timeout_BCP : 8|2@1- (1,0) [0|3] "" BMS
  SG_ Timeout_BCS : 16|2@1- (1,0) [0|3] "" BMS
  SG_ Timeout_BRM : 0|2@1- (1,0) [0|3] "" BMS
@@ -80,29 +80,29 @@ BO_ 136311894 CEM: 4 Charger
  SG_ Timeout_BSM : 18|2@1- (1,0) [0|3] "" BMS
  SG_ Timeout_BST : 20|2@1- (1,0) [0|3] "" BMS
 
-BO_ 405206102 CHM: 3 Charger
+BO_ 2552689750 CHM: 3 Charger
  SG_ MajorChargerVersion : 8|16@1- (1,0) [0|65535] "" BMS
 
-BO_ 403240022 CML: 8 Charger
+BO_ 2550723670 CML: 8 Charger
  SG_ MaxOutputCurrent : 32|16@1- (1,0) [0|65535] "" BMS
  SG_ MaxOutputVoltage : 0|16@1- (1,0) [0|65535] "" BMS
  SG_ MinOutputCurrent : 48|16@1- (1,0) [0|65535] "" BMS
  SG_ MinOutputVoltage : 16|16@1- (1,0) [0|65535] "" BMS
 
-BO_ 402781270 CRM: 8 Charger
+BO_ 2550264918 CRM: 8 Charger
  SG_ ChargerLocation : 40|24@1- (1,0) [0|16777215] "" BMS
  SG_ ChargerNumber : 8|32@1- (1,0) [0|4294967295] "" BMS
  SG_ RecognitionResult : 0|8@1- (1,0) [0|255] "" BMS
 
-BO_ 269153366 CRO: 1 Charger
+BO_ 2416637014 CRO: 1 Charger
  SG_ ChargerReadyForCharging : 0|8@1- (1,0) [0|255] "" BMS
 
-BO_ 404616278 CSD: 8 Charger
+BO_ 2552099926 CSD: 8 Charger
  SG_ ChargerNo : 32|32@1- (1,0) [0|4294967295] "" BMS
  SG_ CumulativeChargingTime : 0|16@1- (1,0) [0|65535] "" BMS
  SG_ OutputEnergy : 16|16@1- (1,0) [0|65535] "" BMS
 
-BO_ 270201942 CST: 4 Charger
+BO_ 2417685590 CST: 4 Charger
  SG_ AbnormalVoltageError : 26|2@1- (1,0) [0|3] "" BMS
  SG_ BmsActivelySuspends : 6|2@1- (1,0) [0|3] "" BMS
  SG_ CannotSupplyReqElQuantity : 14|2@1- (1,0) [0|3] "" BMS
@@ -116,20 +116,20 @@ BO_ 270201942 CST: 4 Charger
  SG_ SuddenStop : 16|2@1- (1,0) [0|3] "" BMS
  SG_ SuspendsArtificially : 2|2@1- (1,0) [0|3] "" BMS
 
-CM_ BO_ 270201942 "[Charging] Battery charging demand";
-CM_ BO_ 270201942 "[Charging] Overall battery charging status";
-CM_ BO_ 270201942 "[Error] BMS's error message";
-CM_ BO_ 270201942 "[Handshake Initiation] Vehicle handshake";
-CM_ BO_ 270201942 "[Parameter Configuration] Battery charging ready state";
-CM_ BO_ 270201942 "[EndOfCharging] BMS statistical data";
-CM_ BO_ 270201942 "[Charging] Power storage battery status information";
-CM_ BO_ 270201942 "[Charging] BMS suspending charging";
-CM_ BO_ 270201942 "[Charging] Charger's charging status";
-CM_ BO_ 270201942 "[Error] Charger's error message";
-CM_ BO_ 270201942 "[Handshake Initiation] Charger handshake";
-CM_ BO_ 270201942 "[Parameter Configuration] Charger's maximum output";
-CM_ BO_ 270201942 "[Handshake Recognition] Charger recognition";
-CM_ BO_ 270201942 "[Parameter Configuration] Charger output ready state";
-CM_ BO_ 270201942 "[EndOfCharging] Charger's statistical data";
-CM_ BO_ 270201942 "[Charging] Charger suspending charging";
+CM_ BO_ 2417685590 "[Charging] Battery charging demand";
+CM_ BO_ 2417685590 "[Charging] Overall battery charging status";
+CM_ BO_ 2417685590 "[Error] BMS's error message";
+CM_ BO_ 2417685590 "[Handshake Initiation] Vehicle handshake";
+CM_ BO_ 2417685590 "[Parameter Configuration] Battery charging ready state";
+CM_ BO_ 2417685590 "[EndOfCharging] BMS statistical data";
+CM_ BO_ 2417685590 "[Charging] Power storage battery status information";
+CM_ BO_ 2417685590 "[Charging] BMS suspending charging";
+CM_ BO_ 2417685590 "[Charging] Charger's charging status";
+CM_ BO_ 2417685590 "[Error] Charger's error message";
+CM_ BO_ 2417685590 "[Handshake Initiation] Charger handshake";
+CM_ BO_ 2417685590 "[Parameter Configuration] Charger's maximum output";
+CM_ BO_ 2417685590 "[Handshake Recognition] Charger recognition";
+CM_ BO_ 2417685590 "[Parameter Configuration] Charger output ready state";
+CM_ BO_ 2417685590 "[EndOfCharging] Charger's statistical data";
+CM_ BO_ 2417685590 "[Charging] Charger suspending charging";
 
