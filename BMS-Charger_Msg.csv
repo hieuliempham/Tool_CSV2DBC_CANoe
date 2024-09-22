@@ -1,0 +1,16 @@
+Name,ID,DLC [Byte],Tx Method,Cycle Time,Transmitter,PGN,Source,Destination,Priority,TpJ1939VarDlc,GenMsgILSupport,GenMsgSendType,GenMsgCycleTime,Comment
+BCL,0x181056F4,5,cyclic,50,BMS,0x1000,0xF4,0x56,6,No,Yes,cyclic,50,[Charging] Battery charging demand
+BEM,0x81E56F4,4,cyclic,250,BMS,0x1E00,0xF4,0x56,2,No,Yes,cyclic,250,[Error] BMS's error message
+BHM,0x182756F4,2,cyclic,250,BMS,0x2700,0xF4,0x56,6,No,Yes,cyclic,250,[Handshake Initiation] Vehicle handshake
+BRO,0x100956F4,1,cyclic,250,BMS,0x900,0xF4,0x56,4,No,Yes,cyclic,250,[Parameter Configuration] Battery charging ready state
+BSD,0x181C56F4,7,cyclic,250,BMS,0x1C00,0xF4,0x56,6,No,Yes,cyclic,250,[EndOfCharging] BMS statistical data
+BSM,0x181356F4,7,cyclic,250,BMS,0x1300,0xF4,0x56,6,No,Yes,cyclic,250,[Charging] Power storage battery status information
+BST,0x101956F4,4,cyclic,10,BMS,0x1900,0xF4,0x56,4,No,Yes,cyclic,10,[Charging] BMS suspending charging
+CCS,0x1812F456,8,cyclic,50,Charger,0x1200,0x56,0xF4,6,No,Yes,cyclic,50,[Charging] Charger's charging status
+CEM,0x81FF456,4,cyclic,250,Charger,0x1F00,0x56,0xF4,2,No,Yes,cyclic,250,[Error] Charger's error message
+CHM,0x1826F456,3,cyclic,250,Charger,0x2600,0x56,0xF4,6,No,Yes,cyclic,250,[Handshake Initiation] Charger handshake
+CML,0x1808F456,8,cyclic,250,Charger,0x800,0x56,0xF4,6,No,Yes,cyclic,250,[Parameter Configuration] Charger's maximum output
+CRM,0x1801F456,8,cyclic,250,Charger,0x100,0x56,0xF4,6,No,Yes,cyclic,250,[Handshake Recognition] Charger recognition
+CRO,0x100AF456,1,cyclic,250,Charger,0xA00,0x56,0xF4,4,No,Yes,cyclic,250,[Parameter Configuration] Charger output ready state
+CSD,0x181DF456,8,cyclic,250,Charger,0x1D00,0x56,0xF4,6,No,Yes,cyclic,250,[EndOfCharging] Charger's statistical data
+CST,0x101AF456,4,cyclic,10,Charger,0x1A00,0x56,0xF4,4,No,Yes,cyclic,10,[Charging] Charger suspending charging
