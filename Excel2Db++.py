@@ -1,8 +1,8 @@
 import csv
 
 # Define input and output file paths
-signal_csv = 'BMS-Charger_Signal.csv'  # Path to the signal CSV
-msg_csv = 'BMS-Charger_Msg.csv'        # Path to the message CSV
+signal_csv = 'BMS-Charger-Signal.csv'  # Path to the signal CSV
+msg_csv = 'BMS-Charger-Msg.csv'        # Path to the message CSV
 dbc_file = 'output.dbc'                # Output DBC file
 
 # Parse the message CSV to collect message data

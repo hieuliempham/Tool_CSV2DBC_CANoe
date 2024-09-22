@@ -1,5 +1,6 @@
 Name,ID,DLC [Byte],Tx Method,Cycle Time,Transmitter,PGN,Source,Destination,Priority,TpJ1939VarDlc,GenMsgILSupport,GenMsgSendType,GenMsgCycleTime,Comment
 BCL,0x181056F4,5,cyclic,50,BMS,0x1000,0xF4,0x56,6,No,Yes,cyclic,50,[Charging] Battery charging demand
+BCS,0x1C1156F4,9,cyclic,250,BMS,0x1100,0xF4,0x56,7,No,Yes,cyclic,250,[Charging] Overall battery charging status
 BEM,0x81E56F4,4,cyclic,250,BMS,0x1E00,0xF4,0x56,2,No,Yes,cyclic,250,[Error] BMS's error message
 BHM,0x182756F4,2,cyclic,250,BMS,0x2700,0xF4,0x56,6,No,Yes,cyclic,250,[Handshake Initiation] Vehicle handshake
 BRO,0x100956F4,1,cyclic,250,BMS,0x900,0xF4,0x56,4,No,Yes,cyclic,250,[Parameter Configuration] Battery charging ready state

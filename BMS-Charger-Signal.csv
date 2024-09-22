@@ -1,0 +1,97 @@
+Message,Message ID,Name,Startbit,Length [Bit],Comment
+BCL,0x181056F4,CurrentDemand,16,16,Current demand (A)
+BCL,0x181056F4,VoltageDemand,0,16,Voltage demand (V)
+BEM,0x81E56F4,Timeout_CCS,16,2,Timeout  of  charger's  charging  state  message
+BEM,0x81E56F4,Timeout_CRO,10,2,Timeout of charger's charging preparation completion message
+BEM,0x81E56F4,Timeout_CRO_NotReady,0,2,Timeout of CRO with SPN2560=0×00
+BEM,0x81E56F4,Timeout_CRO_Ready,2,2,Timeout of CRO with SPN2560=0×AA
+BEM,0x81E56F4,Timeout_CSD,24,2,Timeout of charger's charging statistics message
+BEM,0x81E56F4,Timeout_CST,18,2,Timeout of charger's charging suspension message
+BEM,0x81E56F4,Timeout_CTS_CML,8,2,Timeout of charger time synchronization message and charger maximum output capacity message
+BHM,0x182756F4,MaxChargingVoltage,0,16,Total maximum permissible charging voltage
+BRM,0x1C0256F4,BatteryPackNumber,96,32,"Battery pack No., which is reserved and will be defined by the manufacturer"
+BRM,0x1C0256F4,BatterySystemCapacity,32,16,Capacity of the power storage battery system of whole vehicle
+BRM,0x1C0256F4,BatterySystemVoltage,48,16,Total voltage of the power storage battery system of whole vehicle
+BRM,0x1C0256F4,BatteryType,24,8,Battery type
+BRM,0x1C0256F4,BmsRevision,0,8,"In this standard, as for the charger communication protocol version No., its current version is specified as V1.1 and is expressed as: byte 1 -- 01H"
+BRM,0x1C0256F4,BmsSoftwareVersion_CompileDay,336,8,"BMS software version number, determined according to hexadecimal coding. In which, Byte2 - 01H~1FH represents compilation day (e.g. the 10the day: fill in Byte 2 0AH)"
+BRM,0x1C0256F4,BmsSoftwareVersion_CompileMonth,344,8,"BMS software version number, determined according to hexadecimal coding. In which, Byte3 - 01H~0CH represents compilation month (e.g. November: fill in Byte 3 0BH)"
+BRM,0x1C0256F4,BmsSoftwareVersion_CompileYear,352,16,"BMS software version number, determined according to hexadecimal coding. In which, Byte5, Byte4 - 0001H~FFFEH represents compilation year (e.g. the year of 2015: fill in Byte5-DFH, byte4-07H)"
+BRM,0x1C0256F4,BmsSoftwareVersion_Reserved,368,24,"BMS software version number 8byte represents current BMS version information, determined according to hexadecimal coding. In which, Byte8, byte7, byte6-000001H~FFFFFEH, reserved, fill in FFFFFFH"
+BRM,0x1C0256F4,BmsSoftwareVersion_Serial,328,8,"BMS software version number, determined according to hexadecimal coding. In which, Byte1 - 01H~FEH represents edition serial number (e.g. 16: fill in Byte 1-10H)"
+BRM,0x1C0256F4,BmsVersion,8,16,"In this standard, as for the charger communication protocol version No., its current version is specified as V1.1 and is expressed as: byte3, byte2 -- 0001H"
+BRM,0x1C0256F4,BRM_Reserved1,184,8,Reserved
+BRM,0x1C0256F4,ChargingFrequency,152,24,"Battery set charging frequency, which is subject to BMS statistics."
+BRM,0x1C0256F4,ManufacturerName,64,32,Battery manufacturer name
+BRM,0x1C0256F4,ProductionDay,144,8,Battery set production day
+BRM,0x1C0256F4,ProductionMonth,136,8,Battery set production month
+BRM,0x1C0256F4,ProductionYear,128,8,Battery set production year
+BRM,0x1C0256F4,Property,176,8,Battery set property right mark
+BRM,0x1C0256F4,VIN,192,136,Vehicle identification number (VIN)
+BRO,0x100956F4,BmsReadyForCharging,0,8,Whether BMS is ready for charging
+BSD,0x181C56F4,SingleBatteryMaxTemperature,48,8,Maximum temperature of power storage battery (°C)
+BSD,0x181C56F4,SingleBatteryMaxVoltage,24,16,Maximum voltage of single power storage battery (V)
+BSD,0x181C56F4,SingleBatteryMinTemperature,40,8,Minimum temperature of power storage battery (°C)
+BSD,0x181C56F4,SingleBatteryMinVoltage,8,16,Minimum voltage of single power storage battery (V)
+BSD,0x181C56F4,SuspendStateOfChargeSOC,0,8,Suspend state-of-charge SOC (%)
+BSM,0x181356F4,BatteryCellVoltageState,40,2,Voltage state of battery cell
+BSM,0x181356F4,BatteryChargingOvercurrent,44,2,Charging overcurrent of power storage battery
+BSM,0x181356F4,BatteryExcessTemperature,46,2,Excess temperature of power storage battery
+BSM,0x181356F4,BatteryHighestTemp,8,8,Highest temperature of power storage battery
+BSM,0x181356F4,BatteryHighestTempSerNo,16,8,Serial number of the highest temperature detection point
+BSM,0x181356F4,BatteryInsulationState,48,2,Insulation state of power storage battery
+BSM,0x181356F4,BatteryLowestTemp,24,8,The lowest temperature of power storage battery
+BSM,0x181356F4,BatteryLowestTempSerNo,32,8,Serial number of the lowest temperature detection point of power storage battery
+BSM,0x181356F4,BatteryOutputConnectorState,50,2,Connection state of output connector of power storage battery set
+BSM,0x181356F4,ChargingPermissible,52,2,Charging permissible
+BSM,0x181356F4,SingleBatteryHighestVoltageSerNo,0,8,Serial number of the highest voltage of single power storage battery
+BSM,0x181356F4,StateOfCharge,42,2,State-of-charge SOC of power storage battery for complete vehicle
+BST,0x101956F4,AbnormalVoltageError,26,2,Whether voltage is abnormal
+BST,0x101956F4,BatterySetOverTemp,16,2,Battery set over-temperature
+BST,0x101956F4,BmsConnectorOverTemp,12,2,BMS component and output connector over-temperature
+BST,0x101956F4,ChargerSuspendsActively,6,2,Wether charger actively suspends
+BST,0x101956F4,ChargingConnectorFault,14,2,Charging connector fault
+BST,0x101956F4,ExcessiveCurrentError,24,2,Whether current exceeds the demand value
+BST,0x101956F4,HighVoltageRelayFault,18,2,High voltage relay fault
+BST,0x101956F4,InsulationFault,8,2,Wether insulation fault
+BST,0x101956F4,OtherFaults,22,2,Other faults
+BST,0x101956F4,OutputConnectorOverTemp,10,2,Output connector over-temperature
+BST,0x101956F4,RequiredSocTargetValue,0,2,Wether the required SOC target value reached
+BST,0x101956F4,SettingValueOfSingleVoltage,4,2,Wether the setting value of single voltage reached
+BST,0x101956F4,SettingValueOfTotalVoltage,2,2,Wether the setting value of total voltage reached
+BST,0x101956F4,VoltageDetectionFault,20,2,Voltage detection fault at check point 2
+CCS,0x1812F456,ChargingPermissible,48,2,Charging permissible
+CCS,0x1812F456,CumulativeChargingTime,32,16,Cumulative charging time (min)
+CCS,0x1812F456,CurrentOutputValue,16,16,Current output value (A)
+CCS,0x1812F456,VoltageOutputValue,0,16,Voltage output value (V)
+CEM,0x81FF456,Timeout_BCP,8,2,Timeout of battery charging parameter message
+CEM,0x81FF456,Timeout_BCS,16,2,Timeout of overall battery charging state message
+CEM,0x81FF456,Timeout_BRM,0,2,Timeout of BMS and vehicle recognition message
+CEM,0x81FF456,Timeout_BRO,10,2,Timeout of BMS's charging preparation completion message
+CEM,0x81FF456,Timeout_BSD,24,2,Timeout of BMS's charging statistics message
+CEM,0x81FF456,Timeout_BSM,18,2,Timeout of battery charging requirement message
+CEM,0x81FF456,Timeout_BST,20,2,Timeout of BMS's charging suspension message
+CML,0x1808F456,MaxOutputCurrent,32,16,Maximum output current (A)
+CML,0x1808F456,MaxOutputVoltage,0,16,Maximum output voltage (V)
+CML,0x1808F456,MinOutputCurrent,48,16,Minimum output current (A)
+CML,0x1808F456,MinOutputVoltage,16,16,Minimum output voltage (V)
+CRM,0x1801F456,ChargerLocation,40,24,Charger/charging station location code
+CRM,0x1801F456,ChargerNumber,8,32,Charger Number
+CRM,0x1801F456,RecognitionResult,0,8,Recognition  result
+CRO,0x100AF456,ChargerReadyForCharging,0,8,Whether charger is ready for charging
+CSD,0x181DF456,ChargerNo,32,32,Charger No.
+CSD,0x181DF456,CumulativeChargingTime,0,16,Cumulative charging time (min)
+CSD,0x181DF456,OutputEnergy,16,16,Output energy
+CST,0x101AF456,AbnormalVoltageError,26,2,Voltage is abnormal
+CST,0x101AF456,BmsActivelySuspends,6,2,BMS actively suspends charging
+CST,0x101AF456,CannotSupplyReqElQuantity,14,2,The required electric quantity cannot be transmitted
+CST,0x101AF456,ChargerIntPartOverTemp,12,2,Charger is over-temperature at the internal part
+CST,0x101AF456,ChargerOverTemp,8,2,Charging suspended: charger over-temperature
+CST,0x101AF456,ChargingConnectorFault,10,2,Charging suspended: charging connector fault
+CST,0x101AF456,ConditionReached,0,2,Charging suspends due to reaching the condition set by charger
+CST,0x101AF456,CurrentMismatchError,24,2,Current mismatching
+CST,0x101AF456,FaultSuspension,4,2,Charging fault suspension
+CST,0x101AF456,OtherFault,18,2,Other fault
+CST,0x101AF456,SuddenStop,16,2,Sudden stop of charger
+CST,0x101AF456,SuspendsArtificially,2,2,Charging suspends artificially
+CHM,0x1826F456,MajorChargerVersion,8,16,
