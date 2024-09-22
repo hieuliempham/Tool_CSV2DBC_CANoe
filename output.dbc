@@ -4,113 +4,132 @@ NS_ :
 
 BS_ :
 
-BU_: BMS Charger
+BU_: Charger BMS
+
 
 BO_ 403724020 BCL: 5 BMS
- SG_ CurrentDemand : 16|16@1+ (1,0) [0|0] "" BMS
- SG_ VoltageDemand : 0|16@1+ (1,0) [0|0] "" BMS
-CM_ BO_ 403724020 "[Charging] Battery charging demand";
+ SG_ CurrentDemand : 16|16@1- (1,0) [0|65535] "" Charger
+ SG_ VoltageDemand : 0|16@1- (1,0) [0|65535] "" Charger
+
+BO_ 470898420 BCS: 9 BMS
+
 BO_ 136206068 BEM: 4 BMS
- SG_ Timeout_CCS : 16|2@1+ (1,0) [0|0] "" BMS
- SG_ Timeout_CRO : 10|2@1+ (1,0) [0|0] "" BMS
- SG_ Timeout_CRO_NotReady : 0|2@1+ (1,0) [0|0] "" BMS
- SG_ Timeout_CRO_Ready : 2|2@1+ (1,0) [0|0] "" BMS
- SG_ Timeout_CSD : 24|2@1+ (1,0) [0|0] "" BMS
- SG_ Timeout_CST : 18|2@1+ (1,0) [0|0] "" BMS
- SG_ Timeout_CTS_CML : 8|2@1+ (1,0) [0|0] "" BMS
-CM_ BO_ 136206068 "[Error] BMS's error message";
+ SG_ Timeout_CCS : 16|2@1- (1,0) [0|3] "" Charger
+ SG_ Timeout_CRO : 10|2@1- (1,0) [0|3] "" Charger
+ SG_ Timeout_CRO_NotReady : 0|2@1- (1,0) [0|3] "" Charger
+ SG_ Timeout_CRO_Ready : 2|2@1- (1,0) [0|3] "" Charger
+ SG_ Timeout_CSD : 24|2@1- (1,0) [0|3] "" Charger
+ SG_ Timeout_CST : 18|2@1- (1,0) [0|3] "" Charger
+ SG_ Timeout_CTS_CML : 8|2@1- (1,0) [0|3] "" Charger
+
 BO_ 405231348 BHM: 2 BMS
- SG_ MaxChargingVoltage : 0|16@1+ (1,0) [0|0] "" BMS
-CM_ BO_ 405231348 "[Handshake Initiation] Vehicle handshake";
+ SG_ MaxChargingVoltage : 0|16@1- (1,0) [0|65535] "" Charger
+
 BO_ 269047540 BRO: 1 BMS
- SG_ BmsReadyForCharging : 0|8@1+ (1,0) [0|0] "" BMS
-CM_ BO_ 269047540 "[Parameter Configuration] Battery charging ready state";
+ SG_ BmsReadyForCharging : 0|8@1- (1,0) [0|255] "" Charger
+
 BO_ 404510452 BSD: 7 BMS
- SG_ SingleBatteryMaxTemperature : 48|8@1+ (1,0) [0|0] "" BMS
- SG_ SingleBatteryMaxVoltage : 24|16@1+ (1,0) [0|0] "" BMS
- SG_ SingleBatteryMinTemperature : 40|8@1+ (1,0) [0|0] "" BMS
- SG_ SingleBatteryMinVoltage : 8|16@1+ (1,0) [0|0] "" BMS
- SG_ SuspendStateOfChargeSOC : 0|8@1+ (1,0) [0|0] "" BMS
-CM_ BO_ 404510452 "[EndOfCharging] BMS statistical data";
+ SG_ SingleBatteryMaxTemperature : 48|8@1- (1,0) [0|255] "" Charger
+ SG_ SingleBatteryMaxVoltage : 24|16@1- (1,0) [0|65535] "" Charger
+ SG_ SingleBatteryMinTemperature : 40|8@1- (1,0) [0|255] "" Charger
+ SG_ SingleBatteryMinVoltage : 8|16@1- (1,0) [0|65535] "" Charger
+ SG_ SuspendStateOfChargeSOC : 0|8@1- (1,0) [0|255] "" Charger
+
 BO_ 403920628 BSM: 7 BMS
- SG_ BatteryCellVoltageState : 40|2@1+ (1,0) [0|0] "" BMS
- SG_ BatteryChargingOvercurrent : 44|2@1+ (1,0) [0|0] "" BMS
- SG_ BatteryExcessTemperature : 46|2@1+ (1,0) [0|0] "" BMS
- SG_ BatteryHighestTemp : 8|8@1+ (1,0) [0|0] "" BMS
- SG_ BatteryHighestTempSerNo : 16|8@1+ (1,0) [0|0] "" BMS
- SG_ BatteryInsulationState : 48|2@1+ (1,0) [0|0] "" BMS
- SG_ BatteryLowestTemp : 24|8@1+ (1,0) [0|0] "" BMS
- SG_ BatteryLowestTempSerNo : 32|8@1+ (1,0) [0|0] "" BMS
- SG_ BatteryOutputConnectorState : 50|2@1+ (1,0) [0|0] "" BMS
- SG_ ChargingPermissible : 52|2@1+ (1,0) [0|0] "" BMS
- SG_ SingleBatteryHighestVoltageSerNo : 0|8@1+ (1,0) [0|0] "" BMS
- SG_ StateOfCharge : 42|2@1+ (1,0) [0|0] "" BMS
-CM_ BO_ 403920628 "[Charging] Power storage battery status information";
+ SG_ BatteryCellVoltageState : 40|2@1- (1,0) [0|3] "" Charger
+ SG_ BatteryChargingOvercurrent : 44|2@1- (1,0) [0|3] "" Charger
+ SG_ BatteryExcessTemperature : 46|2@1- (1,0) [0|3] "" Charger
+ SG_ BatteryHighestTemp : 8|8@1- (1,0) [0|255] "" Charger
+ SG_ BatteryHighestTempSerNo : 16|8@1- (1,0) [0|255] "" Charger
+ SG_ BatteryInsulationState : 48|2@1- (1,0) [0|3] "" Charger
+ SG_ BatteryLowestTemp : 24|8@1- (1,0) [0|255] "" Charger
+ SG_ BatteryLowestTempSerNo : 32|8@1- (1,0) [0|255] "" Charger
+ SG_ BatteryOutputConnectorState : 50|2@1- (1,0) [0|3] "" Charger
+ SG_ ChargingPermissible : 52|2@1- (1,0) [0|3] "" Charger
+ SG_ SingleBatteryHighestVoltageSerNo : 0|8@1- (1,0) [0|255] "" Charger
+ SG_ StateOfCharge : 42|2@1- (1,0) [0|3] "" Charger
+
 BO_ 270096116 BST: 4 BMS
- SG_ AbnormalVoltageError : 26|2@1+ (1,0) [0|0] "" BMS
- SG_ BatterySetOverTemp : 16|2@1+ (1,0) [0|0] "" BMS
- SG_ BmsConnectorOverTemp : 12|2@1+ (1,0) [0|0] "" BMS
- SG_ ChargerSuspendsActively : 6|2@1+ (1,0) [0|0] "" BMS
- SG_ ChargingConnectorFault : 14|2@1+ (1,0) [0|0] "" BMS
- SG_ ExcessiveCurrentError : 24|2@1+ (1,0) [0|0] "" BMS
- SG_ HighVoltageRelayFault : 18|2@1+ (1,0) [0|0] "" BMS
- SG_ InsulationFault : 8|2@1+ (1,0) [0|0] "" BMS
- SG_ OtherFaults : 22|2@1+ (1,0) [0|0] "" BMS
- SG_ OutputConnectorOverTemp : 10|2@1+ (1,0) [0|0] "" BMS
- SG_ RequiredSocTargetValue : 0|2@1+ (1,0) [0|0] "" BMS
- SG_ SettingValueOfSingleVoltage : 4|2@1+ (1,0) [0|0] "" BMS
- SG_ SettingValueOfTotalVoltage : 2|2@1+ (1,0) [0|0] "" BMS
- SG_ VoltageDetectionFault : 20|2@1+ (1,0) [0|0] "" BMS
-CM_ BO_ 270096116 "[Charging] BMS suspending charging";
+ SG_ AbnormalVoltageError : 26|2@1- (1,0) [0|3] "" Charger
+ SG_ BatterySetOverTemp : 16|2@1- (1,0) [0|3] "" Charger
+ SG_ BmsConnectorOverTemp : 12|2@1- (1,0) [0|3] "" Charger
+ SG_ ChargerSuspendsActively : 6|2@1- (1,0) [0|3] "" Charger
+ SG_ ChargingConnectorFault : 14|2@1- (1,0) [0|3] "" Charger
+ SG_ ExcessiveCurrentError : 24|2@1- (1,0) [0|3] "" Charger
+ SG_ HighVoltageRelayFault : 18|2@1- (1,0) [0|3] "" Charger
+ SG_ InsulationFault : 8|2@1- (1,0) [0|3] "" Charger
+ SG_ OtherFaults : 22|2@1- (1,0) [0|3] "" Charger
+ SG_ OutputConnectorOverTemp : 10|2@1- (1,0) [0|3] "" Charger
+ SG_ RequiredSocTargetValue : 0|2@1- (1,0) [0|3] "" Charger
+ SG_ SettingValueOfSingleVoltage : 4|2@1- (1,0) [0|3] "" Charger
+ SG_ SettingValueOfTotalVoltage : 2|2@1- (1,0) [0|3] "" Charger
+ SG_ VoltageDetectionFault : 20|2@1- (1,0) [0|3] "" Charger
+
 BO_ 403895382 CCS: 8 Charger
- SG_ ChargingPermissible : 48|2@1+ (1,0) [0|0] "" Charger
- SG_ CumulativeChargingTime : 32|16@1+ (1,0) [0|0] "" Charger
- SG_ CurrentOutputValue : 16|16@1+ (1,0) [0|0] "" Charger
- SG_ VoltageOutputValue : 0|16@1+ (1,0) [0|0] "" Charger
-CM_ BO_ 403895382 "[Charging] Charger's charging status";
+ SG_ ChargingPermissible : 48|2@1- (1,0) [0|3] "" BMS
+ SG_ CumulativeChargingTime : 32|16@1- (1,0) [0|65535] "" BMS
+ SG_ CurrentOutputValue : 16|16@1- (1,0) [0|65535] "" BMS
+ SG_ VoltageOutputValue : 0|16@1- (1,0) [0|65535] "" BMS
+
 BO_ 136311894 CEM: 4 Charger
- SG_ Timeout_BCP : 8|2@1+ (1,0) [0|0] "" Charger
- SG_ Timeout_BCS : 16|2@1+ (1,0) [0|0] "" Charger
- SG_ Timeout_BRM : 0|2@1+ (1,0) [0|0] "" Charger
- SG_ Timeout_BRO : 10|2@1+ (1,0) [0|0] "" Charger
- SG_ Timeout_BSD : 24|2@1+ (1,0) [0|0] "" Charger
- SG_ Timeout_BSM : 18|2@1+ (1,0) [0|0] "" Charger
- SG_ Timeout_BST : 20|2@1+ (1,0) [0|0] "" Charger
-CM_ BO_ 136311894 "[Error] Charger's error message";
+ SG_ Timeout_BCP : 8|2@1- (1,0) [0|3] "" BMS
+ SG_ Timeout_BCS : 16|2@1- (1,0) [0|3] "" BMS
+ SG_ Timeout_BRM : 0|2@1- (1,0) [0|3] "" BMS
+ SG_ Timeout_BRO : 10|2@1- (1,0) [0|3] "" BMS
+ SG_ Timeout_BSD : 24|2@1- (1,0) [0|3] "" BMS
+ SG_ Timeout_BSM : 18|2@1- (1,0) [0|3] "" BMS
+ SG_ Timeout_BST : 20|2@1- (1,0) [0|3] "" BMS
+
 BO_ 405206102 CHM: 3 Charger
- SG_ MajorChargerVersion : 8|16@1+ (1,0) [0|0] "" Charger
-CM_ BO_ 405206102 "[Handshake Initiation] Charger handshake";
+ SG_ MajorChargerVersion : 8|16@1- (1,0) [0|65535] "" BMS
+
 BO_ 403240022 CML: 8 Charger
- SG_ MaxOutputCurrent : 32|16@1+ (1,0) [0|0] "" Charger
- SG_ MaxOutputVoltage : 0|16@1+ (1,0) [0|0] "" Charger
- SG_ MinOutputCurrent : 48|16@1+ (1,0) [0|0] "" Charger
- SG_ MinOutputVoltage : 16|16@1+ (1,0) [0|0] "" Charger
-CM_ BO_ 403240022 "[Parameter Configuration] Charger's maximum output";
+ SG_ MaxOutputCurrent : 32|16@1- (1,0) [0|65535] "" BMS
+ SG_ MaxOutputVoltage : 0|16@1- (1,0) [0|65535] "" BMS
+ SG_ MinOutputCurrent : 48|16@1- (1,0) [0|65535] "" BMS
+ SG_ MinOutputVoltage : 16|16@1- (1,0) [0|65535] "" BMS
+
 BO_ 402781270 CRM: 8 Charger
- SG_ ChargerLocation : 40|24@1+ (1,0) [0|0] "" Charger
- SG_ ChargerNumber : 8|32@1+ (1,0) [0|0] "" Charger
- SG_ RecognitionResult : 0|8@1+ (1,0) [0|0] "" Charger
-CM_ BO_ 402781270 "[Handshake Recognition] Charger recognition";
+ SG_ ChargerLocation : 40|24@1- (1,0) [0|16777215] "" BMS
+ SG_ ChargerNumber : 8|32@1- (1,0) [0|4294967295] "" BMS
+ SG_ RecognitionResult : 0|8@1- (1,0) [0|255] "" BMS
+
 BO_ 269153366 CRO: 1 Charger
- SG_ ChargerReadyForCharging : 0|8@1+ (1,0) [0|0] "" Charger
-CM_ BO_ 269153366 "[Parameter Configuration] Charger output ready state";
+ SG_ ChargerReadyForCharging : 0|8@1- (1,0) [0|255] "" BMS
+
 BO_ 404616278 CSD: 8 Charger
- SG_ ChargerNo : 32|32@1+ (1,0) [0|0] "" Charger
- SG_ CumulativeChargingTime : 0|16@1+ (1,0) [0|0] "" Charger
- SG_ OutputEnergy : 16|16@1+ (1,0) [0|0] "" Charger
-CM_ BO_ 404616278 "[EndOfCharging] Charger's statistical data";
+ SG_ ChargerNo : 32|32@1- (1,0) [0|4294967295] "" BMS
+ SG_ CumulativeChargingTime : 0|16@1- (1,0) [0|65535] "" BMS
+ SG_ OutputEnergy : 16|16@1- (1,0) [0|65535] "" BMS
+
 BO_ 270201942 CST: 4 Charger
- SG_ AbnormalVoltageError : 26|2@1+ (1,0) [0|0] "" Charger
- SG_ BmsActivelySuspends : 6|2@1+ (1,0) [0|0] "" Charger
- SG_ CannotSupplyReqElQuantity : 14|2@1+ (1,0) [0|0] "" Charger
- SG_ ChargerIntPartOverTemp : 12|2@1+ (1,0) [0|0] "" Charger
- SG_ ChargerOverTemp : 8|2@1+ (1,0) [0|0] "" Charger
- SG_ ChargingConnectorFault : 10|2@1+ (1,0) [0|0] "" Charger
- SG_ ConditionReached : 0|2@1+ (1,0) [0|0] "" Charger
- SG_ CurrentMismatchError : 24|2@1+ (1,0) [0|0] "" Charger
- SG_ FaultSuspension : 4|2@1+ (1,0) [0|0] "" Charger
- SG_ OtherFault : 18|2@1+ (1,0) [0|0] "" Charger
- SG_ SuddenStop : 16|2@1+ (1,0) [0|0] "" Charger
- SG_ SuspendsArtificially : 2|2@1+ (1,0) [0|0] "" Charger
+ SG_ AbnormalVoltageError : 26|2@1- (1,0) [0|3] "" BMS
+ SG_ BmsActivelySuspends : 6|2@1- (1,0) [0|3] "" BMS
+ SG_ CannotSupplyReqElQuantity : 14|2@1- (1,0) [0|3] "" BMS
+ SG_ ChargerIntPartOverTemp : 12|2@1- (1,0) [0|3] "" BMS
+ SG_ ChargerOverTemp : 8|2@1- (1,0) [0|3] "" BMS
+ SG_ ChargingConnectorFault : 10|2@1- (1,0) [0|3] "" BMS
+ SG_ ConditionReached : 0|2@1- (1,0) [0|3] "" BMS
+ SG_ CurrentMismatchError : 24|2@1- (1,0) [0|3] "" BMS
+ SG_ FaultSuspension : 4|2@1- (1,0) [0|3] "" BMS
+ SG_ OtherFault : 18|2@1- (1,0) [0|3] "" BMS
+ SG_ SuddenStop : 16|2@1- (1,0) [0|3] "" BMS
+ SG_ SuspendsArtificially : 2|2@1- (1,0) [0|3] "" BMS
+
+CM_ BO_ 270201942 "[Charging] Battery charging demand";
+CM_ BO_ 270201942 "[Charging] Overall battery charging status";
+CM_ BO_ 270201942 "[Error] BMS's error message";
+CM_ BO_ 270201942 "[Handshake Initiation] Vehicle handshake";
+CM_ BO_ 270201942 "[Parameter Configuration] Battery charging ready state";
+CM_ BO_ 270201942 "[EndOfCharging] BMS statistical data";
+CM_ BO_ 270201942 "[Charging] Power storage battery status information";
+CM_ BO_ 270201942 "[Charging] BMS suspending charging";
+CM_ BO_ 270201942 "[Charging] Charger's charging status";
+CM_ BO_ 270201942 "[Error] Charger's error message";
+CM_ BO_ 270201942 "[Handshake Initiation] Charger handshake";
+CM_ BO_ 270201942 "[Parameter Configuration] Charger's maximum output";
+CM_ BO_ 270201942 "[Handshake Recognition] Charger recognition";
+CM_ BO_ 270201942 "[Parameter Configuration] Charger output ready state";
+CM_ BO_ 270201942 "[EndOfCharging] Charger's statistical data";
 CM_ BO_ 270201942 "[Charging] Charger suspending charging";
 
