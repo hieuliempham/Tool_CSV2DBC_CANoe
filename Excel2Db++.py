@@ -1,8 +1,8 @@
 import csv
 
 # Define input and output file paths
-signal_csv = 'BMS-Charger-Signal.csv'  # Path to the signal CSV
-msg_csv = 'BMS-Charger-Message.csv'    # Path to the message CSV
+signal_csv = 'Signal.csv'  # Path to the signal CSV
+msg_csv = 'Message.csv'    # Path to the message CSV
 dbc_file = 'output.dbc'                # Output DBC file
 max_gen_msg_cycle_time = float('-inf')  # Start with negative infinity to ensure any value will be larger
 
@@ -17,8 +17,7 @@ with open(msg_csv, 'r') as f:
         message_name = row['Name']
         dlc = row['DLC [Byte]']
         transmitter = row['Transmitter']
-        source = row['Source']
-        destination = row['Destination']
+        reciever = row['Reciever']
         msg_comment = row['Comment']
         msg_attribute_GenMsgSendType = row['GenMsgSendType']
         msg_attribute_GenMsgCycleTime = row['GenMsgCycleTime']
@@ -37,15 +36,14 @@ with open(msg_csv, 'r') as f:
             'name': message_name,
             'dlc': dlc,
             'transmitter': transmitter,
-            'destination': destination,
+            'reciever': reciever,
             'msg_comment': msg_comment,
             'genMsgSendType': msg_attribute_GenMsgSendType,
             'genMsgCycleTime': msg_attribute_GenMsgCycleTime,
             'signals': []  # Empty list to hold signals
         }
 
-        # Add each node to the dictionary
-        network_nodes[source] = {'name': transmitter}
+        
 
 # Parse the signal CSV to collect signal data
 with open(signal_csv, 'r') as f:
@@ -109,7 +107,7 @@ with open(dbc_file, 'w') as f:
         for signal in message['signals']:
             f.write(
                 f" SG_ {signal['name']} : {signal['start_bit']}|{signal['length']}@{signal['byte_order']}{signal['signedness']} "
-                f"({signal['factor']},{signal['offset']}) [{signal['min']}|{signal['max']}] \"\" {network_nodes[message['destination']]['name']}\n"
+                f"({signal['factor']},{signal['offset']}) [{signal['min']}|{signal['max']}] \"\" {message['reciever']}\n"
             )
 
     f.write('\n')

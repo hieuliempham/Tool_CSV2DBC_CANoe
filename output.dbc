@@ -7,233 +7,520 @@ BS_ :
 BU_: Charger BMS
 
 
-BO_ 2551207668 BCL: 5 BMS
- SG_ CurrentDemand : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
- SG_ VoltageDemand : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+BO_ 1031 BackEMF: 8 BMS
+ SG_ BEMFd : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+ SG_ BEMFq : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
 
-BO_ 2283689716 BEM: 4 BMS
- SG_ Timeout_CCS : 16|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ Timeout_CRO : 10|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ Timeout_CRO_NotReady : 0|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ Timeout_CRO_Ready : 2|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ Timeout_CSD : 24|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ Timeout_CST : 18|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ Timeout_CTS_CML : 8|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
+BO_ 57 BIM1BootloaderAddress: 2 BMS
+ SG_ BIM1BootloaderAddress : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2552714996 BHM: 2 BMS
- SG_ MaxChargingVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+BO_ 768 BIM1CellStatistics1: 7 BMS
+ SG_ BIM1MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM1MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM1MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM1MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2416531188 BRO: 1 BMS
- SG_ BmsReadyForCharging : 0|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+BO_ 769 BIM1CellStatistics2: 5 BMS
+ SG_ BIM1AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM1NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM1StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2551994100 BSD: 7 BMS
- SG_ SingleBatteryMaxTemperature : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ SingleBatteryMaxVoltage : 24|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
- SG_ SingleBatteryMinTemperature : 40|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ SingleBatteryMinVoltage : 8|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
- SG_ SuspendStateOfChargeSOC : 0|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+BO_ 176 BIM1Command: 8 BMS
+ SG_ BIM1CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+ SG_ BIM1CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
 
-BO_ 2551404276 BSM: 7 BMS
- SG_ BatteryCellVoltageState : 40|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ BatteryChargingOvercurrent : 44|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ BatteryExcessTemperature : 46|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ BatteryHighestTemp : 8|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ BatteryHighestTempSerNo : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ BatteryInsulationState : 48|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ BatteryLowestTemp : 24|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ BatteryLowestTempSerNo : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ BatteryOutputConnectorState : 50|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ ChargingPermissible : 52|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ SingleBatteryHighestVoltageSerNo : 0|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ StateOfCharge : 42|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
+BO_ 58 BIM1Heartbeat: 2 BMS
+ SG_ BIM1BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
+ SG_ BIM1Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
+ SG_ BIM1SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
 
-BO_ 2417579764 BST: 4 BMS
- SG_ AbnormalVoltageError : 26|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ BatterySetOverTemp : 16|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ BmsConnectorOverTemp : 12|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ ChargerSuspendsActively : 6|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ ChargingConnectorFault : 14|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ ExcessiveCurrentError : 24|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ HighVoltageRelayFault : 18|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ InsulationFault : 8|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ OtherFaults : 22|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ OutputConnectorOverTemp : 10|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ RequiredSocTargetValue : 0|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ SettingValueOfSingleVoltage : 4|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ SettingValueOfTotalVoltage : 2|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
- SG_ VoltageDetectionFault : 20|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
+BO_ 59 BIM2BootloaderAddress: 2 BMS
+ SG_ BIM2BootloaderAddres : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2551379030 CCS: 8 Charger
- SG_ ChargingPermissible : 48|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ CumulativeChargingTime : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
- SG_ CurrentOutputValue : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
- SG_ VoltageOutputValue : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
+BO_ 770 BIM2CellStatisitcs1: 7 BMS
+ SG_ BIM2MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM2MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM2MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM2MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2283795542 CEM: 4 Charger
- SG_ Timeout_BCP : 8|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ Timeout_BCS : 16|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ Timeout_BRM : 0|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ Timeout_BRO : 10|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ Timeout_BSD : 24|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ Timeout_BSM : 18|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ Timeout_BST : 20|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
+BO_ 771 BIM2CellStatistics2: 5 BMS
+ SG_ BIM2AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM2NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM2StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2552689750 CHM: 3 Charger
- SG_ MajorChargerVersion : 8|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
+BO_ 177 BIM2Command: 8 BMS
+ SG_ BIM2CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+ SG_ BIM2CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
 
-BO_ 2550723670 CML: 8 Charger
- SG_ MaxOutputCurrent : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
- SG_ MaxOutputVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
- SG_ MinOutputCurrent : 48|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
- SG_ MinOutputVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
+BO_ 60 BIM2Heartbeat: 2 BMS
+ SG_ BIM2BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
+ SG_ BIM2Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
+ SG_ BIM2SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
 
-BO_ 2550264918 CRM: 8 Charger
- SG_ ChargerLocation : 40|24@1- (1.0,0.0) [-8388608.0|8388607.0] "" BMS
- SG_ ChargerNumber : 8|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" BMS
- SG_ RecognitionResult : 0|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+BO_ 61 BIM3BootloaderAddress: 2 BMS
+ SG_ BIM3BootloaderAddress : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2416637014 CRO: 1 Charger
- SG_ ChargerReadyForCharging : 0|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+BO_ 772 BIM3CellStatisitcs1: 7 BMS
+ SG_ BIM3MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM3MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM3MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM3MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2552099926 CSD: 8 Charger
- SG_ ChargerNo : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" BMS
- SG_ CumulativeChargingTime : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
- SG_ OutputEnergy : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
+BO_ 773 BIM3CellStatistics2: 5 BMS
+ SG_ BIM3AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM3NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM3StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2417685590 CST: 4 Charger
- SG_ AbnormalVoltageError : 26|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ BmsActivelySuspends : 6|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ CannotSupplyReqElQuantity : 14|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ ChargerIntPartOverTemp : 12|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ ChargerOverTemp : 8|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ ChargingConnectorFault : 10|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ ConditionReached : 0|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ CurrentMismatchError : 24|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ FaultSuspension : 4|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ OtherFault : 18|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ SuddenStop : 16|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
- SG_ SuspendsArtificially : 2|2@1- (1.0,0.0) [-2.0|1.0] "" BMS
+BO_ 178 BIM3Command: 8 BMS
+ SG_ BIM3CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+ SG_ BIM3CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
 
-CM_ BO_ 2551207668 "[Charging] Battery charging demand";
-CM_ SG_ 2551207668 CurrentDemand "Current demand (A)";
-CM_ SG_ 2551207668 VoltageDemand "Voltage demand (V)";
-CM_ BO_ 2283689716 "[Error] BMS's error message";
-CM_ SG_ 2283689716 Timeout_CCS "Timeout  of  charger's  charging  state  message";
-CM_ SG_ 2283689716 Timeout_CRO "Timeout of charger's charging preparation completion message";
-CM_ SG_ 2283689716 Timeout_CRO_NotReady "Timeout of CRO with SPN2560=0×00";
-CM_ SG_ 2283689716 Timeout_CRO_Ready "Timeout of CRO with SPN2560=0×AA";
-CM_ SG_ 2283689716 Timeout_CSD "Timeout of charger's charging statistics message";
-CM_ SG_ 2283689716 Timeout_CST "Timeout of charger's charging suspension message";
-CM_ SG_ 2283689716 Timeout_CTS_CML "Timeout of charger time synchronization message and charger maximum output capacity message";
-CM_ BO_ 2552714996 "[Handshake Initiation] Vehicle handshake";
-CM_ SG_ 2552714996 MaxChargingVoltage "Total maximum permissible charging voltage";
-CM_ BO_ 2416531188 "[Parameter Configuration] Battery charging ready state";
-CM_ SG_ 2416531188 BmsReadyForCharging "Whether BMS is ready for charging";
-CM_ BO_ 2551994100 "[EndOfCharging] BMS statistical data";
-CM_ SG_ 2551994100 SingleBatteryMaxTemperature "Maximum temperature of power storage battery (°C)";
-CM_ SG_ 2551994100 SingleBatteryMaxVoltage "Maximum voltage of single power storage battery (V)";
-CM_ SG_ 2551994100 SingleBatteryMinTemperature "Minimum temperature of power storage battery (°C)";
-CM_ SG_ 2551994100 SingleBatteryMinVoltage "Minimum voltage of single power storage battery (V)";
-CM_ SG_ 2551994100 SuspendStateOfChargeSOC "Suspend state-of-charge SOC (%)";
-CM_ BO_ 2551404276 "[Charging] Power storage battery status information";
-CM_ SG_ 2551404276 BatteryCellVoltageState "Voltage state of battery cell";
-CM_ SG_ 2551404276 BatteryChargingOvercurrent "Charging overcurrent of power storage battery";
-CM_ SG_ 2551404276 BatteryExcessTemperature "Excess temperature of power storage battery";
-CM_ SG_ 2551404276 BatteryHighestTemp "Highest temperature of power storage battery";
-CM_ SG_ 2551404276 BatteryHighestTempSerNo "Serial number of the highest temperature detection point";
-CM_ SG_ 2551404276 BatteryInsulationState "Insulation state of power storage battery";
-CM_ SG_ 2551404276 BatteryLowestTemp "The lowest temperature of power storage battery";
-CM_ SG_ 2551404276 BatteryLowestTempSerNo "Serial number of the lowest temperature detection point of power storage battery";
-CM_ SG_ 2551404276 BatteryOutputConnectorState "Connection state of output connector of power storage battery set";
-CM_ SG_ 2551404276 ChargingPermissible "Charging permissible";
-CM_ SG_ 2551404276 SingleBatteryHighestVoltageSerNo "Serial number of the highest voltage of single power storage battery";
-CM_ SG_ 2551404276 StateOfCharge "State-of-charge SOC of power storage battery for complete vehicle";
-CM_ BO_ 2417579764 "[Charging] BMS suspending charging";
-CM_ SG_ 2417579764 AbnormalVoltageError "Whether voltage is abnormal";
-CM_ SG_ 2417579764 BatterySetOverTemp "Battery set over-temperature";
-CM_ SG_ 2417579764 BmsConnectorOverTemp "BMS component and output connector over-temperature";
-CM_ SG_ 2417579764 ChargerSuspendsActively "Wether charger actively suspends";
-CM_ SG_ 2417579764 ChargingConnectorFault "Charging connector fault";
-CM_ SG_ 2417579764 ExcessiveCurrentError "Whether current exceeds the demand value";
-CM_ SG_ 2417579764 HighVoltageRelayFault "High voltage relay fault";
-CM_ SG_ 2417579764 InsulationFault "Wether insulation fault";
-CM_ SG_ 2417579764 OtherFaults "Other faults";
-CM_ SG_ 2417579764 OutputConnectorOverTemp "Output connector over-temperature";
-CM_ SG_ 2417579764 RequiredSocTargetValue "Wether the required SOC target value reached";
-CM_ SG_ 2417579764 SettingValueOfSingleVoltage "Wether the setting value of single voltage reached";
-CM_ SG_ 2417579764 SettingValueOfTotalVoltage "Wether the setting value of total voltage reached";
-CM_ SG_ 2417579764 VoltageDetectionFault "Voltage detection fault at check point 2";
-CM_ BO_ 2551379030 "[Charging] Charger's charging status";
-CM_ SG_ 2551379030 ChargingPermissible "Charging permissible";
-CM_ SG_ 2551379030 CumulativeChargingTime "Cumulative charging time (min)";
-CM_ SG_ 2551379030 CurrentOutputValue "Current output value (A)";
-CM_ SG_ 2551379030 VoltageOutputValue "Voltage output value (V)";
-CM_ BO_ 2283795542 "[Error] Charger's error message";
-CM_ SG_ 2283795542 Timeout_BCP "Timeout of battery charging parameter message";
-CM_ SG_ 2283795542 Timeout_BCS "Timeout of overall battery charging state message";
-CM_ SG_ 2283795542 Timeout_BRM "Timeout of BMS and vehicle recognition message";
-CM_ SG_ 2283795542 Timeout_BRO "Timeout of BMS's charging preparation completion message";
-CM_ SG_ 2283795542 Timeout_BSD "Timeout of BMS's charging statistics message";
-CM_ SG_ 2283795542 Timeout_BSM "Timeout of battery charging requirement message";
-CM_ SG_ 2283795542 Timeout_BST "Timeout of BMS's charging suspension message";
-CM_ BO_ 2552689750 "[Handshake Initiation] Charger handshake";
-CM_ BO_ 2550723670 "[Parameter Configuration] Charger's maximum output";
-CM_ SG_ 2550723670 MaxOutputCurrent "Maximum output current (A)";
-CM_ SG_ 2550723670 MaxOutputVoltage "Maximum output voltage (V)";
-CM_ SG_ 2550723670 MinOutputCurrent "Minimum output current (A)";
-CM_ SG_ 2550723670 MinOutputVoltage "Minimum output voltage (V)";
-CM_ BO_ 2550264918 "[Handshake Recognition] Charger recognition";
-CM_ SG_ 2550264918 ChargerLocation "Charger/charging station location code";
-CM_ SG_ 2550264918 ChargerNumber "Charger Number";
-CM_ SG_ 2550264918 RecognitionResult "Recognition  result";
-CM_ BO_ 2416637014 "[Parameter Configuration] Charger output ready state";
-CM_ SG_ 2416637014 ChargerReadyForCharging "Whether charger is ready for charging";
-CM_ BO_ 2552099926 "[EndOfCharging] Charger's statistical data";
-CM_ SG_ 2552099926 ChargerNo "Charger No.";
-CM_ SG_ 2552099926 CumulativeChargingTime "Cumulative charging time (min)";
-CM_ SG_ 2552099926 OutputEnergy "Output energy";
-CM_ BO_ 2417685590 "[Charging] Charger suspending charging";
-CM_ SG_ 2417685590 AbnormalVoltageError "Voltage is abnormal";
-CM_ SG_ 2417685590 BmsActivelySuspends "BMS actively suspends charging";
-CM_ SG_ 2417685590 CannotSupplyReqElQuantity "The required electric quantity cannot be transmitted";
-CM_ SG_ 2417685590 ChargerIntPartOverTemp "Charger is over-temperature at the internal part";
-CM_ SG_ 2417685590 ChargerOverTemp "Charging suspended: charger over-temperature";
-CM_ SG_ 2417685590 ChargingConnectorFault "Charging suspended: charging connector fault";
-CM_ SG_ 2417685590 ConditionReached "Charging suspends due to reaching the condition set by charger";
-CM_ SG_ 2417685590 CurrentMismatchError "Current mismatching";
-CM_ SG_ 2417685590 FaultSuspension "Charging fault suspension";
-CM_ SG_ 2417685590 OtherFault "Other fault";
-CM_ SG_ 2417685590 SuddenStop "Sudden stop of charger";
-CM_ SG_ 2417685590 SuspendsArtificially "Charging suspends artificially";
+BO_ 62 BIM3Heartbeat: 2 BMS
+ SG_ BIM3BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
+ SG_ BIM3Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
+ SG_ BIM3SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
+
+BO_ 63 BIM4BootloaderAddress: 2 BMS
+ SG_ BIM4BootloaderAddres : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+
+BO_ 774 BIM4CellStatistics1: 8 BMS
+ SG_ BIM4MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM4MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM4MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM4MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+
+BO_ 775 BIM4CellStatistics2: 5 BMS
+ SG_ BIM4AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+ SG_ BIM4NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
+ SG_ BIM4StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
+
+BO_ 179 BIM4Command: 8 BMS
+ SG_ BIM4CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+ SG_ BIM4CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+
+BO_ 64 BIM4Heartbeat: 2 BMS
+ SG_ BIM4BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
+ SG_ BIM4Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
+ SG_ BIM4SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
+
+BO_ 1026 BusMeasurement: 8 BMS
+ SG_ BusCurrent : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+ SG_ BusVoltage : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+
+BO_ 262 BusVoltage12V: 4 BMS
+ SG_ BusVoltage12V : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
+
+BO_ 170 CANcorderHeartbeat: 2 Charger
+ SG_ CANcorderHeartbeat : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
+
+BO_ 48 CANMirrorBootloaderAddress: 2 Charger
+ SG_ CANMirrorBootloaderAddress : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
+
+BO_ 50 CANMirrorCommand: 8 Charger
+ SG_ CANMirrorCommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" BMS
+ SG_ CANMirrorCommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" BMS
+
+BO_ 49 CANMirrorHeatbeart: 2 Charger
+ SG_ CANMirrorOverflowCounter : 0|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+ SG_ Mirror_can_error : 14|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Mirror_CANa_Status : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Timeout : 8|6@1- (1.0,0.0) [-32.0|31.0] "" BMS
+
+BO_ 810 Cells_103_106: 8 Charger
+ SG_ Cell103 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell103_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell104 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell104_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell105 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell105_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell106 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell106_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 811 Cells_107_110: 8 Charger
+ SG_ Cell107 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell107_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell108 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell108_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell109 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell109_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell110 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell110_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 787 Cells_13_16: 8 Charger
+ SG_ Cell13 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell13_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell14 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell14_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell15 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell15_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell16 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell16_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 788 Cells_17_20: 8 Charger
+ SG_ Cell17 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell17_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell18 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell18_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell19 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell19_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell20 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell20_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 784 Cells_1_4: 8 Charger
+ SG_ Cell1 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell1_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell2 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell2_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell3 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell3_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell4 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell4_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 789 Cells_21_24: 8 Charger
+ SG_ Cell21 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell21_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell22 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell22_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell23 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell23_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell24 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell24_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 790 Cells_25_28: 8 Charger
+ SG_ Cell25 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell25_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell26 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell26_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell27 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell27_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell28 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell28_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 791 Cells_29_32: 8 Charger
+ SG_ Cell29 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell29_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell30 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell30_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell31 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell31_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell32 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell32_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 792 Cells_33_36: 8 Charger
+ SG_ Cell33 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell33_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell34 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell34_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell35 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell35_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell36 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell36_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 793 Cells_37_40: 8 Charger
+ SG_ Cell37 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell37_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell38 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell38_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell39 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell39_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell40 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell40_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 794 Cells_41_44: 8 Charger
+ SG_ Cell41 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell41_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell42 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell42_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell43 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell43_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell44 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell44_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 795 Cells_45_48: 8 Charger
+ SG_ Cell45 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell45_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell46 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell46_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell47 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell47_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell48 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell48_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 796 Cells_49_52: 8 Charger
+ SG_ Cell49 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell49_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell50 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell50_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell51 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell51_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell52 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell52_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 797 Cells_53_54: 8 Charger
+ SG_ Cell53 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell53_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell54 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell54_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 798 Cells_55_58: 8 Charger
+ SG_ Cell55 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell55_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell56 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell56_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell57 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell57_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell58 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell58_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 799 Cells_59_62: 8 Charger
+ SG_ Cell59 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell59_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell60 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell60_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell61 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell61_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell62 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell62_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 785 Cells_5_8: 8 Charger
+ SG_ Cell5 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell5_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell6 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell6_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell7 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell7_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell8 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell8_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 800 Cells_63_66: 8 Charger
+ SG_ Cell63 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell63_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell64 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell64_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell65 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell65_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell66 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell66_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 801 Cells_67_70: 8 Charger
+ SG_ Cell67 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell67_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell68 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell68_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell69 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell69_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell70 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell70_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 802 Cells_71_74: 8 Charger
+ SG_ Cell71 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell71_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell72 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell72_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell73 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell73_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell74 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell74_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 803 Cells_75_78: 8 Charger
+ SG_ Cell75 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell75_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell76 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell76_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell77 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell77_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell78 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell78_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 804 Cells_79_82: 8 Charger
+ SG_ Cell79 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell79_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell80 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell80_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell81 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell81_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell82 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell82_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 805 Cells_83_86: 8 Charger
+ SG_ Cell83 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell83_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell84 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell84_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell85 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell85_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell86 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell86_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 806 Cells_87_90: 8 Charger
+ SG_ Cell87 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell87_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell88 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell88_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell89 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell89_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell90 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell90_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 807 Cells_91_94: 8 Charger
+ SG_ Cell91 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell91_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell92 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell92_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell93 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell93_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell94 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell94_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 808 Cells_95_98: 8 Charger
+ SG_ Cell95 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell95_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell96 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell96_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell97 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell97_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell98 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell98_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 809 Cells_99_102: 8 Charger
+ SG_ Cell100 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell100_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell101 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell101_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell102 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell102_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell99 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell99_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 786 Cells_9_12: 8 Charger
+ SG_ Cell10 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell10_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell11 : 32|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell11_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell12 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell12_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+ SG_ Cell9 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
+ SG_ Cell9_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
+
+BO_ 270 CurrentTime: 7 Charger
+ SG_ Day : 24|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+ SG_ Hours : 32|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+ SG_ Minutes : 40|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+ SG_ Month : 16|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+ SG_ Seconds : 48|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
+ SG_ Years : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
+
 BA_DEF_ BO_  "GenMsgSendType" ENUM "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
-BA_DEF_ BO_  "GenMsgCycleTime" INT 0 250;
-BA_ "GenMsgSendType" BO_ 2551207668 0;
-BA_ "GenMsgCycleTime" BO_ 2551207668 50;
-BA_ "GenMsgSendType" BO_ 2283689716 0;
-BA_ "GenMsgCycleTime" BO_ 2283689716 250;
-BA_ "GenMsgSendType" BO_ 2552714996 0;
-BA_ "GenMsgCycleTime" BO_ 2552714996 250;
-BA_ "GenMsgSendType" BO_ 2416531188 0;
-BA_ "GenMsgCycleTime" BO_ 2416531188 250;
-BA_ "GenMsgSendType" BO_ 2551994100 0;
-BA_ "GenMsgCycleTime" BO_ 2551994100 250;
-BA_ "GenMsgSendType" BO_ 2551404276 0;
-BA_ "GenMsgCycleTime" BO_ 2551404276 250;
-BA_ "GenMsgSendType" BO_ 2417579764 0;
-BA_ "GenMsgCycleTime" BO_ 2417579764 10;
-BA_ "GenMsgSendType" BO_ 2551379030 0;
-BA_ "GenMsgCycleTime" BO_ 2551379030 50;
-BA_ "GenMsgSendType" BO_ 2283795542 0;
-BA_ "GenMsgCycleTime" BO_ 2283795542 250;
-BA_ "GenMsgSendType" BO_ 2552689750 0;
-BA_ "GenMsgCycleTime" BO_ 2552689750 250;
-BA_ "GenMsgSendType" BO_ 2550723670 0;
-BA_ "GenMsgCycleTime" BO_ 2550723670 250;
-BA_ "GenMsgSendType" BO_ 2550264918 0;
-BA_ "GenMsgCycleTime" BO_ 2550264918 250;
-BA_ "GenMsgSendType" BO_ 2416637014 0;
-BA_ "GenMsgCycleTime" BO_ 2416637014 250;
-BA_ "GenMsgSendType" BO_ 2552099926 0;
-BA_ "GenMsgCycleTime" BO_ 2552099926 250;
-BA_ "GenMsgSendType" BO_ 2417685590 0;
-BA_ "GenMsgCycleTime" BO_ 2417685590 10;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 5000;
+BA_ "GenMsgSendType" BO_ 1031 0;
+BA_ "GenMsgCycleTime" BO_ 1031 500;
+BA_ "GenMsgSendType" BO_ 57 0;
+BA_ "GenMsgCycleTime" BO_ 57 5000;
+BA_ "GenMsgSendType" BO_ 768 0;
+BA_ "GenMsgCycleTime" BO_ 768 200;
+BA_ "GenMsgSendType" BO_ 769 0;
+BA_ "GenMsgCycleTime" BO_ 769 200;
+BA_ "GenMsgSendType" BO_ 176 0;
+BA_ "GenMsgCycleTime" BO_ 176 5000;
+BA_ "GenMsgSendType" BO_ 58 0;
+BA_ "GenMsgCycleTime" BO_ 58 200;
+BA_ "GenMsgSendType" BO_ 59 0;
+BA_ "GenMsgCycleTime" BO_ 59 5000;
+BA_ "GenMsgSendType" BO_ 770 0;
+BA_ "GenMsgCycleTime" BO_ 770 250;
+BA_ "GenMsgSendType" BO_ 771 0;
+BA_ "GenMsgCycleTime" BO_ 771 250;
+BA_ "GenMsgSendType" BO_ 177 0;
+BA_ "GenMsgCycleTime" BO_ 177 5000;
+BA_ "GenMsgSendType" BO_ 60 0;
+BA_ "GenMsgCycleTime" BO_ 60 200;
+BA_ "GenMsgSendType" BO_ 61 0;
+BA_ "GenMsgCycleTime" BO_ 61 5000;
+BA_ "GenMsgSendType" BO_ 772 0;
+BA_ "GenMsgCycleTime" BO_ 772 250;
+BA_ "GenMsgSendType" BO_ 773 0;
+BA_ "GenMsgCycleTime" BO_ 773 250;
+BA_ "GenMsgSendType" BO_ 178 0;
+BA_ "GenMsgCycleTime" BO_ 178 5000;
+BA_ "GenMsgSendType" BO_ 62 0;
+BA_ "GenMsgCycleTime" BO_ 62 200;
+BA_ "GenMsgSendType" BO_ 63 0;
+BA_ "GenMsgCycleTime" BO_ 63 5000;
+BA_ "GenMsgSendType" BO_ 774 0;
+BA_ "GenMsgCycleTime" BO_ 774 250;
+BA_ "GenMsgSendType" BO_ 775 0;
+BA_ "GenMsgCycleTime" BO_ 775 250;
+BA_ "GenMsgSendType" BO_ 179 0;
+BA_ "GenMsgCycleTime" BO_ 179 5000;
+BA_ "GenMsgSendType" BO_ 64 0;
+BA_ "GenMsgCycleTime" BO_ 64 200;
+BA_ "GenMsgSendType" BO_ 1026 0;
+BA_ "GenMsgCycleTime" BO_ 1026 500;
+BA_ "GenMsgSendType" BO_ 262 0;
+BA_ "GenMsgCycleTime" BO_ 262 200;
+BA_ "GenMsgSendType" BO_ 170 0;
+BA_ "GenMsgCycleTime" BO_ 170 5000;
+BA_ "GenMsgSendType" BO_ 48 0;
+BA_ "GenMsgCycleTime" BO_ 48 5000;
+BA_ "GenMsgSendType" BO_ 50 0;
+BA_ "GenMsgCycleTime" BO_ 50 5000;
+BA_ "GenMsgSendType" BO_ 49 0;
+BA_ "GenMsgCycleTime" BO_ 49 200;
+BA_ "GenMsgSendType" BO_ 810 0;
+BA_ "GenMsgCycleTime" BO_ 810 500;
+BA_ "GenMsgSendType" BO_ 811 0;
+BA_ "GenMsgCycleTime" BO_ 811 500;
+BA_ "GenMsgSendType" BO_ 787 0;
+BA_ "GenMsgCycleTime" BO_ 787 250;
+BA_ "GenMsgSendType" BO_ 788 0;
+BA_ "GenMsgCycleTime" BO_ 788 250;
+BA_ "GenMsgSendType" BO_ 784 0;
+BA_ "GenMsgCycleTime" BO_ 784 250;
+BA_ "GenMsgSendType" BO_ 789 0;
+BA_ "GenMsgCycleTime" BO_ 789 250;
+BA_ "GenMsgSendType" BO_ 790 0;
+BA_ "GenMsgCycleTime" BO_ 790 250;
+BA_ "GenMsgSendType" BO_ 791 0;
+BA_ "GenMsgCycleTime" BO_ 791 250;
+BA_ "GenMsgSendType" BO_ 792 0;
+BA_ "GenMsgCycleTime" BO_ 792 250;
+BA_ "GenMsgSendType" BO_ 793 0;
+BA_ "GenMsgCycleTime" BO_ 793 250;
+BA_ "GenMsgSendType" BO_ 794 0;
+BA_ "GenMsgCycleTime" BO_ 794 250;
+BA_ "GenMsgSendType" BO_ 795 0;
+BA_ "GenMsgCycleTime" BO_ 795 250;
+BA_ "GenMsgSendType" BO_ 796 0;
+BA_ "GenMsgCycleTime" BO_ 796 250;
+BA_ "GenMsgSendType" BO_ 797 0;
+BA_ "GenMsgCycleTime" BO_ 797 250;
+BA_ "GenMsgSendType" BO_ 798 0;
+BA_ "GenMsgCycleTime" BO_ 798 250;
+BA_ "GenMsgSendType" BO_ 799 0;
+BA_ "GenMsgCycleTime" BO_ 799 250;
+BA_ "GenMsgSendType" BO_ 785 0;
+BA_ "GenMsgCycleTime" BO_ 785 250;
+BA_ "GenMsgSendType" BO_ 800 0;
+BA_ "GenMsgCycleTime" BO_ 800 500;
+BA_ "GenMsgSendType" BO_ 801 0;
+BA_ "GenMsgCycleTime" BO_ 801 500;
+BA_ "GenMsgSendType" BO_ 802 0;
+BA_ "GenMsgCycleTime" BO_ 802 500;
+BA_ "GenMsgSendType" BO_ 803 0;
+BA_ "GenMsgCycleTime" BO_ 803 500;
+BA_ "GenMsgSendType" BO_ 804 0;
+BA_ "GenMsgCycleTime" BO_ 804 500;
+BA_ "GenMsgSendType" BO_ 805 0;
+BA_ "GenMsgCycleTime" BO_ 805 500;
+BA_ "GenMsgSendType" BO_ 806 0;
+BA_ "GenMsgCycleTime" BO_ 806 500;
+BA_ "GenMsgSendType" BO_ 807 0;
+BA_ "GenMsgCycleTime" BO_ 807 500;
+BA_ "GenMsgSendType" BO_ 808 0;
+BA_ "GenMsgCycleTime" BO_ 808 500;
+BA_ "GenMsgSendType" BO_ 809 0;
+BA_ "GenMsgCycleTime" BO_ 809 500;
+BA_ "GenMsgSendType" BO_ 786 0;
+BA_ "GenMsgCycleTime" BO_ 786 250;
+BA_ "GenMsgSendType" BO_ 270 0;
+BA_ "GenMsgCycleTime" BO_ 270 200;
