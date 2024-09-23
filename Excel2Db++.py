@@ -4,6 +4,7 @@ import csv
 signal_csv = 'BMS-Charger-Signal.csv'  # Path to the signal CSV
 msg_csv = 'BMS-Charger-Message.csv'    # Path to the message CSV
 dbc_file = 'output.dbc'                # Output DBC file
+max_gen_msg_cycle_time = float('-inf')  # Start with negative infinity to ensure any value will be larger
 
 # Parse the message CSV to collect message data
 messages = {}
@@ -19,6 +20,17 @@ with open(msg_csv, 'r') as f:
         source = row['Source']
         destination = row['Destination']
         msg_comment = row['Comment']
+        msg_attribute_GenMsgSendType = row['GenMsgSendType']
+        msg_attribute_GenMsgCycleTime = row['GenMsgCycleTime']
+        if msg_attribute_GenMsgCycleTime:
+            try:
+                cycle_time_value = float(msg_attribute_GenMsgCycleTime)  # Convert to float (or int if you prefer)
+                # Update the max value if the current cycle time is larger
+                if cycle_time_value > max_gen_msg_cycle_time:
+                    max_gen_msg_cycle_time = cycle_time_value
+            except ValueError:
+                print(f"Invalid GenMsgCycleTime value: {msg_attribute_GenMsgCycleTime} for message ID: {message_id}")
+
 
         # Add each message to the dictionary
         messages[message_id] = {
@@ -27,6 +39,8 @@ with open(msg_csv, 'r') as f:
             'transmitter': transmitter,
             'destination': destination,
             'msg_comment': msg_comment,
+            'genMsgSendType': msg_attribute_GenMsgSendType,
+            'genMsgCycleTime': msg_attribute_GenMsgCycleTime,
             'signals': []  # Empty list to hold signals
         }
 
@@ -109,9 +123,45 @@ with open(dbc_file, 'w') as f:
                 message_id_dec |= 0x80000000  # Mark extended ID
             f.write(f"CM_ BO_ {message_id_dec} \"{message['msg_comment']}\";\n")
 
+
         # Signal-level comments
         for signal in message['signals']:
             if signal['signal_comment']:
                 f.write(f"CM_ SG_ {message_id_dec} {signal['name']} \"{signal['signal_comment']}\";\n")
 
+    # Define attributes for messages and signals
+    if 'genMsgSendType' in message and message['genMsgSendType']:
+        f.write(f'BA_DEF_ BO_  "GenMsgSendType" ENUM "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";\n')
+        genMsgSendType = ["cyclic", "reserved", "cyclicIfActive", "reserved", "reserved", "reserved", "reserved", "reserved", "noMsgSendType"]
+    
+    if 'genMsgCycleTime' in message and message['genMsgCycleTime']:
+        # f.write(f'BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;\n')
+        f.write(f'BA_DEF_ BO_  "GenMsgCycleTime" INT 0 {int(max_gen_msg_cycle_time)};\n')
+
+    # Add attributes for messages and signals
+    for message_id, message in messages.items():
+        # Message-level Attribute
+        if 'genMsgSendType' in message and message['genMsgSendType']:
+            # Check if the value is in the genMsgSendType list
+            if message['genMsgSendType'] in genMsgSendType:
+                # Get the index of the value in genMsgSendType list and overwrite it
+                genMsgSendTypeIndex = genMsgSendType.index(message['genMsgSendType'])
+
+                message_id_dec = int(message_id, 16)
+                if message_id_dec > 0x7FF:
+                    message_id_dec |= 0x80000000  # Mark extended ID
+                
+                # Write the attribute with the object number (index)
+                f.write(f"BA_ \"GenMsgSendType\" BO_ {message_id_dec} {genMsgSendTypeIndex};\n")
+
+        if message['genMsgCycleTime']:
+            message_id_dec = int(message_id, 16)
+            if int(message_id_dec) > 0x7FF:
+                message_id_dec |= 0x80000000  # Mark extended ID
+            f.write(f"BA_ \"GenMsgCycleTime\" BO_ {message_id_dec} {message['genMsgCycleTime']};\n")
+                
+
+
+
 print("Conversion completed! DBC file created.")
+

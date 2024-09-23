@@ -11,14 +11,6 @@ BO_ 2551207668 BCL: 5 BMS
  SG_ CurrentDemand : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ VoltageDemand : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
 
-BO_ 2618382068 BCS: 9 BMS
- SG_ CurrentChargeState : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
- SG_ EstimatedRemainingChargingTime : 56|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
- SG_ GroupNrOfCellWithHighestVoltage : 44|4@1- (1.0,0.0) [-8.0|7.0] "" Charger
- SG_ HighestVoltageOfBatteryCell : 32|12@1- (1.0,0.0) [-2048.0|2047.0] "" Charger
- SG_ MeasuredChargingCurrent : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
- SG_ MeasuredChargingVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 2283689716 BEM: 4 BMS
  SG_ Timeout_CCS : 16|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
  SG_ Timeout_CRO : 10|2@1- (1.0,0.0) [-2.0|1.0] "" Charger
@@ -125,13 +117,6 @@ BO_ 2417685590 CST: 4 Charger
 CM_ BO_ 2551207668 "[Charging] Battery charging demand";
 CM_ SG_ 2551207668 CurrentDemand "Current demand (A)";
 CM_ SG_ 2551207668 VoltageDemand "Voltage demand (V)";
-CM_ BO_ 2618382068 "[Charging] Overall battery charging status";
-CM_ SG_ 2618382068 CurrentChargeState "Current state-of-charge SOC (%)";
-CM_ SG_ 2618382068 EstimatedRemainingChargingTime "Estimated remaining charging time (min)";
-CM_ SG_ 2618382068 GroupNrOfCellWithHighestVoltage "Group number in which the highest voltage of single power storage battery is located";
-CM_ SG_ 2618382068 HighestVoltageOfBatteryCell "Voltage of maximum single power storage battery";
-CM_ SG_ 2618382068 MeasuredChargingCurrent "Measured value of charging current (A)";
-CM_ SG_ 2618382068 MeasuredChargingVoltage "Measured value of charging voltage (V)";
 CM_ BO_ 2283689716 "[Error] BMS's error message";
 CM_ SG_ 2283689716 Timeout_CCS "Timeout  of  charger's  charging  state  message";
 CM_ SG_ 2283689716 Timeout_CRO "Timeout of charger's charging preparation completion message";
@@ -220,3 +205,35 @@ CM_ SG_ 2417685590 FaultSuspension "Charging fault suspension";
 CM_ SG_ 2417685590 OtherFault "Other fault";
 CM_ SG_ 2417685590 SuddenStop "Sudden stop of charger";
 CM_ SG_ 2417685590 SuspendsArtificially "Charging suspends artificially";
+BA_DEF_ BO_  "GenMsgSendType" ENUM "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 250;
+BA_ "GenMsgSendType" BO_ 2551207668 0;
+BA_ "GenMsgCycleTime" BO_ 2551207668 50;
+BA_ "GenMsgSendType" BO_ 2283689716 0;
+BA_ "GenMsgCycleTime" BO_ 2283689716 250;
+BA_ "GenMsgSendType" BO_ 2552714996 0;
+BA_ "GenMsgCycleTime" BO_ 2552714996 250;
+BA_ "GenMsgSendType" BO_ 2416531188 0;
+BA_ "GenMsgCycleTime" BO_ 2416531188 250;
+BA_ "GenMsgSendType" BO_ 2551994100 0;
+BA_ "GenMsgCycleTime" BO_ 2551994100 250;
+BA_ "GenMsgSendType" BO_ 2551404276 0;
+BA_ "GenMsgCycleTime" BO_ 2551404276 250;
+BA_ "GenMsgSendType" BO_ 2417579764 0;
+BA_ "GenMsgCycleTime" BO_ 2417579764 10;
+BA_ "GenMsgSendType" BO_ 2551379030 0;
+BA_ "GenMsgCycleTime" BO_ 2551379030 50;
+BA_ "GenMsgSendType" BO_ 2283795542 0;
+BA_ "GenMsgCycleTime" BO_ 2283795542 250;
+BA_ "GenMsgSendType" BO_ 2552689750 0;
+BA_ "GenMsgCycleTime" BO_ 2552689750 250;
+BA_ "GenMsgSendType" BO_ 2550723670 0;
+BA_ "GenMsgCycleTime" BO_ 2550723670 250;
+BA_ "GenMsgSendType" BO_ 2550264918 0;
+BA_ "GenMsgCycleTime" BO_ 2550264918 250;
+BA_ "GenMsgSendType" BO_ 2416637014 0;
+BA_ "GenMsgCycleTime" BO_ 2416637014 250;
+BA_ "GenMsgSendType" BO_ 2552099926 0;
+BA_ "GenMsgCycleTime" BO_ 2552099926 250;
+BA_ "GenMsgSendType" BO_ 2417685590 0;
+BA_ "GenMsgCycleTime" BO_ 2417685590 10;

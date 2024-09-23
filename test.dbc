@@ -33,33 +33,34 @@ NS_ :
 
 BS_:
 
-BU_:
+BU_: Charger BMS
+
+
+BO_ 0 New_Message_2: 2 Vector__XXX
+ SG_ CurrentDemand : 0|16@1- (0.1,0.1) [-32768|32767] "A"  Charger
+
+BO_ 2551207668 BCL: 5 BMS
+ SG_ VoltageDemand : 0|16@1- (1,0) [-32768|32767] "V"  Charger
+ SG_ CurrentDemand : 16|16@1- (0.1,0.1) [-32768|32767] "A"  Charger
 
 
 
-
-BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
-BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
-BA_DEF_  "DBName" STRING ;
-BA_DEF_  "BusType" STRING ;
-BA_DEF_ BU_  "NodeLayerModules" STRING ;
-BA_DEF_ BU_  "ECU" STRING ;
-BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
-BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
-BA_DEF_ BU_  "CANoeDrift" INT 0 0;
-BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
-BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
-BA_DEF_DEF_  "MultiplexExtEnabled" "No";
-BA_DEF_DEF_  "CANFD_BRS" "1";
-BA_DEF_DEF_  "DBName" "";
-BA_DEF_DEF_  "BusType" "";
-BA_DEF_DEF_  "NodeLayerModules" "";
-BA_DEF_DEF_  "ECU" "";
-BA_DEF_DEF_  "CANoeJitterMax" 0;
-BA_DEF_DEF_  "CANoeJitterMin" 0;
-BA_DEF_DEF_  "CANoeDrift" 0;
-BA_DEF_DEF_  "CANoeStartDelay" 0;
-BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
-BA_ "BusType" "CAN FD";
-BA_ "DBName" "CAN_FD";
+CM_ SG_ 0 CurrentDemand "Current demand (A)";
+CM_ BO_ 2551207668 "asd";
+CM_ SG_ 2551207668 VoltageDemand "Voltage demand (V)";
+CM_ SG_ 2551207668 CurrentDemand "Current demand (A)";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 5000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "Yes","No";
+BA_DEF_ BO_  "TpJ1939VarDlc" ENUM  "Yes","No";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "";
+BA_DEF_DEF_  "GenMsgILSupport" "";
+BA_DEF_DEF_  "TpJ1939VarDlc" "";
+BA_ "TpJ1939VarDlc" BO_ 0 0;
+BA_ "GenMsgILSupport" BO_ 0 0;
+BA_ "GenMsgSendType" BO_ 0 0;
+BA_ "GenMsgCycleTime" BO_ 0 50;
+BA_ "GenMsgSendType" BO_ 2551207668 0;
+BA_ "GenMsgCycleTime" BO_ 2551207668 100;
 
