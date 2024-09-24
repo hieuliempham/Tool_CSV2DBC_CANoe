@@ -8,6 +8,7 @@ max_gen_msg_cycle_time = float('-inf')  # Start with negative infinity to find m
 
 # Set to collect unique GenMsgSendType values
 genMsgSendType_set = set()
+genSigSendType_set = set()
 
 # Parse the message CSV to collect message data
 messages = {}
@@ -49,9 +50,6 @@ with open(msg_csv, 'r') as f:
             'signals': []
         }
 
-# Convert the set to a list for indexing
-genMsgSendType_list = list(genMsgSendType_set)
-
 # Parse the signal CSV to collect signal data
 with open(signal_csv, 'r') as f:
     reader = csv.DictReader(f)
@@ -63,6 +61,12 @@ with open(signal_csv, 'r') as f:
             factor = float(row.get('Factor', '1'))
             offset = float(row.get('Offset', '0'))
             signedness = row.get('Signedness', '-')
+
+            # Collect unique GenSigSendType values
+            signal_send_type = row['GenSigSendType']
+            if signal_send_type:
+                genSigSendType_set.add(signal_send_type)  # Add unique values to the set
+
             is_signed = signedness == '-'
             min_val = row['Min'] if 'Min' in row else str(-(2**(length - 1)) * factor + offset) if is_signed else '0'
             max_val = row['Max'] if 'Max' in row else str((2**(length - 1) - 1) * factor + offset) if is_signed else str((2**length - 1) * factor + offset)
@@ -78,8 +82,13 @@ with open(signal_csv, 'r') as f:
                 'signedness': signedness,
                 'factor': factor,
                 'offset': offset,
+                'genSigSendType': signal_send_type,
                 'signal_comment': row.get('Comment')
             })
+
+# Convert the set to a list for indexing
+genMsgSendType_list = list(genMsgSendType_set)
+genSigSendType_list = list(genSigSendType_set)
 
 # Write the DBC file
 with open(dbc_file, 'w') as f:
@@ -112,9 +121,11 @@ with open(dbc_file, 'w') as f:
             if signal['signal_comment']:
                 f.write(f"CM_ SG_ {message_id_dec} {signal['name']} \"{signal['signal_comment']}\";\n")
 
-    # Write dynamic GenMsgSendType and GenMsgCycleTime attributes
+    # Write dynamic attributes
     unique_gen_msg_send_types = ",".join(f'"{msg}"' for msg in genMsgSendType_list)
     f.write(f'BA_DEF_ BO_ "GenMsgSendType" ENUM {unique_gen_msg_send_types};\n')
+    unique_gen_sig_send_types = ",".join(f'"{sig}"' for sig in genSigSendType_list)
+    f.write(f'BA_DEF_ SG_ "GenSigSendType" ENUM {unique_gen_sig_send_types};\n')
     f.write(f'BA_DEF_ BO_ "GenMsgCycleTime" INT 0 {int(max_gen_msg_cycle_time)};\n')
 
     # Add message-level attributes
@@ -130,5 +141,12 @@ with open(dbc_file, 'w') as f:
         # GenMsgCycleTime
         if message['genMsgCycleTime']:
             f.write(f"BA_ \"GenMsgCycleTime\" BO_ {message_id_dec} {message['genMsgCycleTime']};\n")
+
+        for signal in message['signals']:
+            if signal['genSigSendType']:
+                # Find the index of the GenSigSendType in the list and write the index instead of the string
+                gen_sig_send_type_index = genSigSendType_list.index(signal['genSigSendType'])
+                f.write(f"BA_ \"GenSigSendType\" SG_ {message_id_dec} {signal['name']} {gen_sig_send_type_index};\n")
+
 
 print("Conversion completed! DBC file created.")
