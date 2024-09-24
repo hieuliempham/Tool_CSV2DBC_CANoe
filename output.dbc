@@ -6,126 +6,98 @@ BS_ :
 
 BU_: Charger BMS
 
-
 BO_ 1031 BackEMF: 8 BMS
  SG_ BEMFd : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
  SG_ BEMFq : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
-
 BO_ 57 BIM1BootloaderAddress: 2 BMS
  SG_ BIM1BootloaderAddress : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 768 BIM1CellStatistics1: 7 BMS
  SG_ BIM1MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM1MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM1MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM1MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 769 BIM1CellStatistics2: 5 BMS
  SG_ BIM1AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM1NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM1StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 176 BIM1Command: 8 BMS
  SG_ BIM1CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
  SG_ BIM1CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
-
 BO_ 58 BIM1Heartbeat: 2 BMS
  SG_ BIM1BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
  SG_ BIM1Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
  SG_ BIM1SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
-
 BO_ 59 BIM2BootloaderAddress: 2 BMS
  SG_ BIM2BootloaderAddres : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 770 BIM2CellStatisitcs1: 7 BMS
  SG_ BIM2MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM2MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM2MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM2MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 771 BIM2CellStatistics2: 5 BMS
  SG_ BIM2AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM2NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM2StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 177 BIM2Command: 8 BMS
  SG_ BIM2CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
  SG_ BIM2CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
-
 BO_ 60 BIM2Heartbeat: 2 BMS
  SG_ BIM2BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
  SG_ BIM2Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
  SG_ BIM2SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
-
 BO_ 61 BIM3BootloaderAddress: 2 BMS
  SG_ BIM3BootloaderAddress : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 772 BIM3CellStatisitcs1: 7 BMS
  SG_ BIM3MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM3MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM3MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM3MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 773 BIM3CellStatistics2: 5 BMS
  SG_ BIM3AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM3NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM3StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 178 BIM3Command: 8 BMS
  SG_ BIM3CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
  SG_ BIM3CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
-
 BO_ 62 BIM3Heartbeat: 2 BMS
  SG_ BIM3BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
  SG_ BIM3Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
  SG_ BIM3SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
-
 BO_ 63 BIM4BootloaderAddress: 2 BMS
  SG_ BIM4BootloaderAddres : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 774 BIM4CellStatistics1: 8 BMS
  SG_ BIM4MaxCellNumber : 16|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM4MaxCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM4MinCellNumber : 48|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM4MinCellVoltage : 32|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 775 BIM4CellStatistics2: 5 BMS
  SG_ BIM4AvgCellVoltage : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
  SG_ BIM4NumberBalancingCells : 32|8@1- (1.0,0.0) [-128.0|127.0] "" Charger
  SG_ BIM4StdevCellVoltage : 16|16@1- (1.0,0.0) [-32768.0|32767.0] "" Charger
-
 BO_ 179 BIM4Command: 8 BMS
  SG_ BIM4CommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
  SG_ BIM4CommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
-
 BO_ 64 BIM4Heartbeat: 2 BMS
  SG_ BIM4BQ : 2|6@1- (1.0,0.0) [-32.0|31.0] "" Charger
  SG_ BIM4Init : 0|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
  SG_ BIM4SPI : 1|1@1- (1.0,0.0) [-1.0|0.0] "" Charger
-
 BO_ 1026 BusMeasurement: 8 BMS
  SG_ BusCurrent : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
  SG_ BusVoltage : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
-
 BO_ 262 BusVoltage12V: 4 BMS
  SG_ BusVoltage12V : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" Charger
-
 BO_ 170 CANcorderHeartbeat: 2 Charger
  SG_ CANcorderHeartbeat : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
-
 BO_ 48 CANMirrorBootloaderAddress: 2 Charger
  SG_ CANMirrorBootloaderAddress : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
-
 BO_ 50 CANMirrorCommand: 8 Charger
  SG_ CANMirrorCommandCode : 32|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" BMS
  SG_ CANMirrorCommandValue : 0|32@1- (1.0,0.0) [-2147483648.0|2147483647.0] "" BMS
-
 BO_ 49 CANMirrorHeatbeart: 2 Charger
  SG_ CANMirrorOverflowCounter : 0|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
  SG_ Mirror_can_error : 14|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Mirror_CANa_Status : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Timeout : 8|6@1- (1.0,0.0) [-32.0|31.0] "" BMS
-
 BO_ 810 Cells_103_106: 8 Charger
  SG_ Cell103 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell103_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -135,7 +107,6 @@ BO_ 810 Cells_103_106: 8 Charger
  SG_ Cell105_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell106 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell106_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 811 Cells_107_110: 8 Charger
  SG_ Cell107 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell107_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -145,7 +116,6 @@ BO_ 811 Cells_107_110: 8 Charger
  SG_ Cell109_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell110 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell110_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 787 Cells_13_16: 8 Charger
  SG_ Cell13 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell13_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -155,7 +125,6 @@ BO_ 787 Cells_13_16: 8 Charger
  SG_ Cell15_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell16 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell16_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 788 Cells_17_20: 8 Charger
  SG_ Cell17 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell17_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -165,7 +134,6 @@ BO_ 788 Cells_17_20: 8 Charger
  SG_ Cell19_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell20 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell20_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 784 Cells_1_4: 8 Charger
  SG_ Cell1 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell1_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -175,7 +143,6 @@ BO_ 784 Cells_1_4: 8 Charger
  SG_ Cell3_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell4 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell4_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 789 Cells_21_24: 8 Charger
  SG_ Cell21 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell21_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -185,7 +152,6 @@ BO_ 789 Cells_21_24: 8 Charger
  SG_ Cell23_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell24 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell24_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 790 Cells_25_28: 8 Charger
  SG_ Cell25 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell25_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -195,7 +161,6 @@ BO_ 790 Cells_25_28: 8 Charger
  SG_ Cell27_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell28 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell28_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 791 Cells_29_32: 8 Charger
  SG_ Cell29 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell29_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -205,7 +170,6 @@ BO_ 791 Cells_29_32: 8 Charger
  SG_ Cell31_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell32 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell32_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 792 Cells_33_36: 8 Charger
  SG_ Cell33 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell33_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -215,7 +179,6 @@ BO_ 792 Cells_33_36: 8 Charger
  SG_ Cell35_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell36 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell36_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 793 Cells_37_40: 8 Charger
  SG_ Cell37 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell37_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -225,7 +188,6 @@ BO_ 793 Cells_37_40: 8 Charger
  SG_ Cell39_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell40 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell40_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 794 Cells_41_44: 8 Charger
  SG_ Cell41 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell41_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -235,7 +197,6 @@ BO_ 794 Cells_41_44: 8 Charger
  SG_ Cell43_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell44 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell44_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 795 Cells_45_48: 8 Charger
  SG_ Cell45 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell45_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -245,7 +206,6 @@ BO_ 795 Cells_45_48: 8 Charger
  SG_ Cell47_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell48 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell48_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 796 Cells_49_52: 8 Charger
  SG_ Cell49 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell49_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -255,13 +215,11 @@ BO_ 796 Cells_49_52: 8 Charger
  SG_ Cell51_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell52 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell52_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 797 Cells_53_54: 8 Charger
  SG_ Cell53 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell53_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell54 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell54_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 798 Cells_55_58: 8 Charger
  SG_ Cell55 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell55_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -271,7 +229,6 @@ BO_ 798 Cells_55_58: 8 Charger
  SG_ Cell57_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell58 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell58_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 799 Cells_59_62: 8 Charger
  SG_ Cell59 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell59_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -281,7 +238,6 @@ BO_ 799 Cells_59_62: 8 Charger
  SG_ Cell61_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell62 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell62_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 785 Cells_5_8: 8 Charger
  SG_ Cell5 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell5_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -291,7 +247,6 @@ BO_ 785 Cells_5_8: 8 Charger
  SG_ Cell7_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell8 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell8_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 800 Cells_63_66: 8 Charger
  SG_ Cell63 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell63_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -301,7 +256,6 @@ BO_ 800 Cells_63_66: 8 Charger
  SG_ Cell65_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell66 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell66_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 801 Cells_67_70: 8 Charger
  SG_ Cell67 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell67_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -311,7 +265,6 @@ BO_ 801 Cells_67_70: 8 Charger
  SG_ Cell69_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell70 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell70_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 802 Cells_71_74: 8 Charger
  SG_ Cell71 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell71_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -321,7 +274,6 @@ BO_ 802 Cells_71_74: 8 Charger
  SG_ Cell73_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell74 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell74_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 803 Cells_75_78: 8 Charger
  SG_ Cell75 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell75_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -331,7 +283,6 @@ BO_ 803 Cells_75_78: 8 Charger
  SG_ Cell77_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell78 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell78_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 804 Cells_79_82: 8 Charger
  SG_ Cell79 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell79_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -341,7 +292,6 @@ BO_ 804 Cells_79_82: 8 Charger
  SG_ Cell81_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell82 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell82_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 805 Cells_83_86: 8 Charger
  SG_ Cell83 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell83_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -351,7 +301,6 @@ BO_ 805 Cells_83_86: 8 Charger
  SG_ Cell85_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell86 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell86_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 806 Cells_87_90: 8 Charger
  SG_ Cell87 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell87_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -361,7 +310,6 @@ BO_ 806 Cells_87_90: 8 Charger
  SG_ Cell89_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell90 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell90_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 807 Cells_91_94: 8 Charger
  SG_ Cell91 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell91_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -371,7 +319,6 @@ BO_ 807 Cells_91_94: 8 Charger
  SG_ Cell93_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell94 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell94_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 808 Cells_95_98: 8 Charger
  SG_ Cell95 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell95_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -381,7 +328,6 @@ BO_ 808 Cells_95_98: 8 Charger
  SG_ Cell97_bal : 47|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell98 : 48|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell98_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 809 Cells_99_102: 8 Charger
  SG_ Cell100 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell100_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -391,7 +337,6 @@ BO_ 809 Cells_99_102: 8 Charger
  SG_ Cell102_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell99 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell99_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 786 Cells_9_12: 8 Charger
  SG_ Cell10 : 16|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell10_bal : 31|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
@@ -401,7 +346,6 @@ BO_ 786 Cells_9_12: 8 Charger
  SG_ Cell12_bal : 63|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
  SG_ Cell9 : 0|15@1- (1.0,0.0) [-16384.0|16383.0] "" BMS
  SG_ Cell9_bal : 15|1@1- (1.0,0.0) [-1.0|0.0] "" BMS
-
 BO_ 270 CurrentTime: 7 Charger
  SG_ Day : 24|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
  SG_ Hours : 32|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
@@ -409,9 +353,8 @@ BO_ 270 CurrentTime: 7 Charger
  SG_ Month : 16|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
  SG_ Seconds : 48|8@1- (1.0,0.0) [-128.0|127.0] "" BMS
  SG_ Years : 0|16@1- (1.0,0.0) [-32768.0|32767.0] "" BMS
-
-BA_DEF_ BO_  "GenMsgSendType" ENUM "cyclic","reserved","cyclicIfActive","reserved","reserved","reserved","reserved","reserved","noMsgSendType";
-BA_DEF_ BO_  "GenMsgCycleTime" INT 0 5000;
+BA_DEF_ BO_ "GenMsgSendType" ENUM "cyclic";
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 5000;
 BA_ "GenMsgSendType" BO_ 1031 0;
 BA_ "GenMsgCycleTime" BO_ 1031 500;
 BA_ "GenMsgSendType" BO_ 57 0;
